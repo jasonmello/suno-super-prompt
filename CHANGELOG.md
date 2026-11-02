@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- README: "Works with any AI" section (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) with step-by-step ChatGPT Project/GPT setup; notes that the creator prefers ChatGPT for generating songs.
+
 ## [1.0.0] - 2026-11-02
 
 ### Added

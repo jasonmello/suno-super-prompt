@@ -9,6 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-8A2BE2)](skills/suno-super-prompt/SKILL.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Works with any AI](https://img.shields.io/badge/works%20with-ChatGPT%20%7C%20Claude%20%7C%20Gemini%20%7C%20any%20AI-orange)](#works-with-any-ai)
 
 [English](#english) · [Português](#português)
 
@@ -18,7 +19,7 @@
 
 ## English
 
-An open-source AI skill that turns Claude (or any chat assistant) into the **creative director and producer** of your band. It writes complete Suno **SUPER PROMPTS** (title, lyrics with production directions, style and exclude), always within Suno's character limits.
+An open-source AI skill that turns any AI assistant (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) into the **creative director and producer** of your band. It writes complete Suno **SUPER PROMPTS** (title, lyrics with production directions, style and exclude), always within Suno's character limits.
 
 It packages techniques learned across several albums, EPs and singles:
 
@@ -51,9 +52,26 @@ Characters — LYRICS 3,289/5,000 · STYLE 786/1,000 · EXCLUDE 209/1,000 · STY
 
 `[ ]` section · `[[ ]]` production direction · `( )` backing vocal · UPPERCASE line = shouted/screamed
 
-### Install
+### Works with any AI
 
-**Claude Code: as a plugin (recommended)**
+The skill is plain text: rules, references and examples. Any assistant that accepts custom instructions or file attachments can use it: ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot, Le Chat, local models…
+
+> **Creator's pick:** I use it every day, and my favourite for generating the songs is **ChatGPT**. That's where every album, EP and single behind these techniques was written. The other assistants work too, so use whichever you like best.
+
+**ChatGPT (creator's choice)**
+
+1. Create a **Project** (or a custom **GPT**).
+2. Paste [`SKILL.md`](skills/suno-super-prompt/SKILL.md) into the instructions. If you write in Portuguese, the [starter prompt](prompts/starter-prompt-pt.md) works as well.
+3. Upload the files from [`references/`](skills/suno-super-prompt/references) and [`examples/`](skills/suno-super-prompt/examples) as project files / knowledge.
+4. Start with: *"Create the concept for my band's new EP…"* and go track by track.
+
+ChatGPT can run `check_prompt.py` in its code tool when you upload it, which gives you exact character counts.
+
+**Gemini, Grok, DeepSeek and others:** paste `SKILL.md` (or the starter prompt) at the start of the chat, or into a Gem / custom-instructions slot, and attach the references.
+
+### Install (Claude)
+
+**Claude Code: as a plugin**
 
 ```bash
 /plugin marketplace add jasonmello/awesome-suno-prompt-skill
@@ -68,8 +86,6 @@ cp -r awesome-suno-prompt-skill/skills/suno-super-prompt ~/.claude/skills/
 ```
 
 **Claude.ai / Claude desktop app**: download [`skills/suno-super-prompt`](skills/suno-super-prompt) as a `.zip` and upload it under *Settings → Capabilities → Skills*.
-
-**ChatGPT, Gemini and others**: paste [`SKILL.md`](skills/suno-super-prompt/SKILL.md) as custom instructions and attach the `references/` files. Or use the ready-made [Portuguese starter prompt](prompts/starter-prompt-pt.md).
 
 ### Usage
 
@@ -132,7 +148,7 @@ tests/                           # validator test suite
 
 ## Português
 
-Uma skill de IA open source que transforma o Claude (ou qualquer assistente) no **diretor criativo e produtor musical** da sua banda. Ela gera **SUPER PROMPTS** completos para o Suno (título, letra com direções de produção, style e exclude), sempre dentro dos limites de caracteres.
+Uma skill de IA open source que transforma qualquer assistente (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) no **diretor criativo e produtor musical** da sua banda. Ela gera **SUPER PROMPTS** completos para o Suno (título, letra com direções de produção, style e exclude), sempre dentro dos limites de caracteres.
 
 Reúne as técnicas usadas na criação de vários álbuns, EPs e singles:
 
@@ -143,7 +159,24 @@ Reúne as técnicas usadas na criação de vários álbuns, EPs e singles:
 - **Regras de letra** contra "AI-core": palavras proibidas, storytelling concreto, refrões cantáveis.
 - **Validador** que reprova qualquer prompt acima dos limites.
 
-### Instalação
+### Funciona com qualquer IA
+
+A skill é só texto: regras, referências e exemplos. Qualquer assistente que aceite instruções personalizadas ou anexos consegue usá-la, como ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot, Le Chat e modelos locais.
+
+> **A preferência do criador:** eu uso no dia a dia, e o meu favorito para gerar as músicas é o **ChatGPT**. Foi nele que nasceram todos os álbuns, EPs e singles que deram origem a essas técnicas. As outras IAs também funcionam, então use a que você preferir.
+
+**No ChatGPT (a escolha do criador):**
+
+1. Crie um **Projeto** (ou um **GPT** personalizado).
+2. Cole o [prompt inicial em português](prompts/starter-prompt-pt.md) ou o [`SKILL.md`](skills/suno-super-prompt/SKILL.md) nas instruções.
+3. Envie os arquivos de [`references/`](skills/suno-super-prompt/references) e [`examples/`](skills/suno-super-prompt/examples) como arquivos do projeto.
+4. Comece com: *"Crie o conceito do novo EP da minha banda…"* e siga faixa a faixa.
+
+Se você também enviar o `check_prompt.py`, o ChatGPT pode rodá-lo na ferramenta de código e conferir a contagem exata de caracteres.
+
+**Gemini, Grok, DeepSeek e outras:** cole o prompt inicial (ou o `SKILL.md`) no começo da conversa, num Gem ou nas instruções personalizadas, e anexe as referências.
+
+### Instalação no Claude
 
 **Claude Code (plugin):**
 
@@ -155,8 +188,6 @@ Reúne as técnicas usadas na criação de vários álbuns, EPs e singles:
 **Claude Code (manual):** copie `skills/suno-super-prompt` para `~/.claude/skills/`.
 
 **Claude.ai / app do Claude:** compacte a pasta `skills/suno-super-prompt` em `.zip` e envie em *Settings → Capabilities → Skills*.
-
-**ChatGPT, Gemini e outros:** cole o [prompt inicial em português](prompts/starter-prompt-pt.md) no começo da conversa.
 
 ### Como usar
 
