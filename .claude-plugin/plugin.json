@@ -3,8 +3,8 @@
   "version": "1.1.0",
   "description": "Write Suno SUPER PROMPTS (title, lyrics with [sections] and [[directions]], style, exclude) that sound like a real band, not AI.",
   "author": { "name": "Jason Mello", "url": "https://github.com/jasonmello" },
-  "homepage": "https://github.com/jasonmello/awesome-suno-prompt-skill",
-  "repository": "https://github.com/jasonmello/awesome-suno-prompt-skill",
+  "homepage": "https://github.com/jasonmello/suno-super-prompt",
+  "repository": "https://github.com/jasonmello/suno-super-prompt",
   "license": "MIT",
   "keywords": ["suno", "music", "songwriting", "prompt", "lyrics", "ai-music"]
 }

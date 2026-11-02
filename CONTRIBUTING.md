@@ -33,8 +33,8 @@ Thanks for helping make Suno prompts sound less like AI. Contributions in Englis
 ## Development
 
 ```bash
-git clone https://github.com/jasonmello/awesome-suno-prompt-skill
-cd awesome-suno-prompt-skill
+git clone https://github.com/jasonmello/suno-super-prompt
+cd suno-super-prompt
 python3 -m unittest discover -s tests -v
 python3 scripts/validate_skill.py skills/suno-super-prompt/SKILL.md
 ```

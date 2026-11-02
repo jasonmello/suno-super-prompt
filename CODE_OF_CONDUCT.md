@@ -6,6 +6,6 @@ In short: be respectful, assume good intent, give constructive feedback, and kee
 
 ## Reporting
 
-Report unacceptable behaviour privately to the maintainer through a [GitHub security advisory](https://github.com/jasonmello/awesome-suno-prompt-skill/security/advisories/new) or a direct message to [@jasonmello](https://github.com/jasonmello). Reports are handled confidentially.
+Report unacceptable behaviour privately to the maintainer through a [GitHub security advisory](https://github.com/jasonmello/suno-super-prompt/security/advisories/new) or a direct message to [@jasonmello](https://github.com/jasonmello). Reports are handled confidentially.
 
 The maintainer may remove comments, commits, issues and other contributions that violate this code, and may temporarily or permanently ban contributors who do so.

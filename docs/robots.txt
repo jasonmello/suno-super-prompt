@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jasonmello.github.io/awesome-suno-prompt-skill/sitemap.xml
+Sitemap: https://jasonmello.github.io/suno-super-prompt/sitemap.xml

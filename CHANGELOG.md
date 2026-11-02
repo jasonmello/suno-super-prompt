@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed the project from `awesome-suno-prompt-skill` to `suno-super-prompt` (the `awesome-` prefix is reserved by convention for curated lists). Old GitHub URLs redirect; the website moved to https://jasonmello.github.io/suno-super-prompt/ and the Claude Code install is now `/plugin install suno-super-prompt@suno-super-prompt`.
+
+### Added
+
+- GitHub Pages website with SEO metadata, structured data, sitemap and social preview image.
+
 ## [1.1.0] - 2026-11-02
 
 Improvements from a blind test: a fresh Claude instance used only the skill folder to write a single.
@@ -34,6 +42,6 @@ Improvements from a blind test: a fresh Claude instance used only the skill fold
 - Four worked examples, Portuguese starter prompt for other chat assistants, Claude Code plugin and marketplace manifests.
 - Test suite, CI, issue and pull request templates.
 
-[Unreleased]: https://github.com/jasonmello/awesome-suno-prompt-skill/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/jasonmello/awesome-suno-prompt-skill/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/jasonmello/awesome-suno-prompt-skill/releases/tag/v1.0.0
+[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/jasonmello/suno-super-prompt/releases/tag/v1.0.0

@@ -1,16 +1,16 @@
 <div align="center">
 
-[![Awesome Suno Prompt Skill — lyrics, style and exclude prompts that sound like a real band, not AI](assets/social-preview.png)](https://jasonmello.github.io/awesome-suno-prompt-skill/)
+[![Suno Super Prompt — lyrics, style and exclude prompts that sound like a real band, not AI](assets/social-preview.png)](https://jasonmello.github.io/suno-super-prompt/)
 
-# Awesome Suno Prompt Skill
+# Suno Super Prompt
 
 **Suno AI prompts that sound like a real band, not AI.** Free, open-source SUPER PROMPT method for Suno lyrics, style and exclude, for ChatGPT, Claude, Gemini and any AI.
 
 **Prompts para o Suno AI que soam como banda de verdade, não como IA.** Método gratuito e open source para letra, style e exclude no Suno, para ChatGPT, Claude, Gemini e qualquer IA.
 
-**[Website](https://jasonmello.github.io/awesome-suno-prompt-skill/)** · **[Quick start](#works-with-any-ai)** · **[Examples](skills/suno-super-prompt/examples)**
+**[Website](https://jasonmello.github.io/suno-super-prompt/)** · **[Quick start](#works-with-any-ai)** · **[Examples](skills/suno-super-prompt/examples)**
 
-[![CI](https://github.com/jasonmello/awesome-suno-prompt-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonmello/awesome-suno-prompt-skill/actions/workflows/ci.yml)
+[![CI](https://github.com/jasonmello/suno-super-prompt/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonmello/suno-super-prompt/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-8A2BE2)](skills/suno-super-prompt/SKILL.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -79,15 +79,15 @@ ChatGPT can run `check_prompt.py` in its code tool when you upload it, which giv
 **Claude Code: as a plugin**
 
 ```bash
-/plugin marketplace add jasonmello/awesome-suno-prompt-skill
-/plugin install suno-super-prompt@awesome-suno-prompt-skill
+/plugin marketplace add jasonmello/suno-super-prompt
+/plugin install suno-super-prompt@suno-super-prompt
 ```
 
 **Claude Code: manually**
 
 ```bash
-git clone https://github.com/jasonmello/awesome-suno-prompt-skill
-cp -r awesome-suno-prompt-skill/skills/suno-super-prompt ~/.claude/skills/
+git clone https://github.com/jasonmello/suno-super-prompt
+cp -r suno-super-prompt/skills/suno-super-prompt ~/.claude/skills/
 ```
 
 **Claude.ai / Claude desktop app**: download [`skills/suno-super-prompt`](skills/suno-super-prompt) as a `.zip` and upload it under *Settings → Capabilities → Skills*.
@@ -186,8 +186,8 @@ Se você também enviar o `check_prompt.py`, o ChatGPT pode rodá-lo na ferramen
 **Claude Code (plugin):**
 
 ```bash
-/plugin marketplace add jasonmello/awesome-suno-prompt-skill
-/plugin install suno-super-prompt@awesome-suno-prompt-skill
+/plugin marketplace add jasonmello/suno-super-prompt
+/plugin install suno-super-prompt@suno-super-prompt
 ```
 
 **Claude Code (manual):** copie `skills/suno-super-prompt` para `~/.claude/skills/`.
