@@ -39,7 +39,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/validate_skill.py skills/suno-super-prompt/SKILL.md
 ```
 
-No dependencies beyond the Python 3.9+ standard library.
+No dependencies beyond the Python 3.10+ standard library.
 
 ## Pull requests
 
