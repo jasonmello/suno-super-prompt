@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate examples
+        run: |
+          for f in skills/suno-super-prompt/examples/*.txt; do
+            echo "::group::$f"
+            python -I skills/suno-super-prompt/scripts/check_prompt.py "$f"
+            echo "::endgroup::"
+          done
+
+  manifests:
+    name: Manifests and skill metadata
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate JSON
+        run: |
+          python -m json.tool .claude-plugin/plugin.json > /dev/null
+          python -m json.tool .claude-plugin/marketplace.json > /dev/null
+      - name: Validate SKILL.md frontmatter
+        run: python -I scripts/validate_skill.py skills/suno-super-prompt/SKILL.md

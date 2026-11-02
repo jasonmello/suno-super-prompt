@@ -1,0 +1,30 @@
+name: Suno ignored the prompt
+description: Suno did something the prompt told it not to do (electric guitar in an acoustic take, wrong singer, slow intro…)
+labels: ["suno-behavior"]
+body:
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What did Suno do?
+      placeholder: "The acoustic version still has drums and an electric guitar in the chorus."
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The SUPER PROMPT you used
+      description: Paste STYLE and EXCLUDE at least. Lyrics are optional.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Suno model version
+      placeholder: "v5"
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?

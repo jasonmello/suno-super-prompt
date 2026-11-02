@@ -1,0 +1,29 @@
+name: New technique
+description: Share a STYLE phrase, EXCLUDE trick or lyric rule that Suno respects
+labels: ["technique"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+    validations:
+      required: true
+  - type: textarea
+    id: technique
+    attributes:
+      label: The technique
+      description: The exact wording for STYLE / EXCLUDE / [[directions]].
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Suno model version tested
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Before / after
+      description: How many generations did you try, and what changed?

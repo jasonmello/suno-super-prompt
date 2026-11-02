@@ -1,0 +1,12 @@
+{
+  "name": "awesome-suno-prompt-skill",
+  "owner": { "name": "Jason Mello", "url": "https://github.com/jasonmello" },
+  "plugins": [
+    {
+      "name": "suno-super-prompt",
+      "source": "./",
+      "description": "Write Suno SUPER PROMPTS that sound like a real band, not AI.",
+      "version": "1.0.0"
+    }
+  ]
+}
