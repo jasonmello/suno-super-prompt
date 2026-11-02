@@ -2,15 +2,23 @@
 
 ## Banned vocabulary (AI-core)
 
-These words flag a lyric as machine-written. Do not use them — not even once — unless the user explicitly asks.
+These rules apply to the **sung text** (lyrics and title). `[[directions]]` are production notes for Suno, so a phrase like `No static noise` there is fine. `scripts/check_prompt.py` uses the same two lists — keep them in sync when editing.
 
-**Imagery:** neon, static, velvet, echo/echoes, shadow/shadows, ember/embers, ashes, flames (as metaphor), spark, ignite, inferno, shattered, fractured, tapestry, symphony, melody of…, canvas, mosaic, labyrinth, abyss, void, cosmos, celestial, ethereal, eternal, infinite, horizon, twilight, moonlight, starlight, stardust, whispers, whispered, haunting, ghosts (as metaphor), phantom, halo, crown (as metaphor), throne, kingdom, fairytale, fate, destiny, soul on fire, wildfire, storm inside, chains, cage (as metaphor), wings, rise from the ashes.
+### Banned — never use, unless the user explicitly asks
 
-**Glue words:** beneath, amidst, embrace, linger, lingering, unspoken, unbroken, undone, unravel, intertwined, resonate, cascade, kaleidoscope, electric (as adjective for feelings), heartbeat (as rhythm metaphor), pulse (as metaphor), "in the dark", "through the night", "fading light", "city lights", "burning bright".
+neon, static, velvet, echo, echoes, shadow, shadows, ember, embers, ashes, spark, sparks, ignite, inferno, shattered, fractured, tapestry, symphony, canvas, mosaic, labyrinth, abyss, void, cosmos, celestial, ethereal, eternal, infinite, horizon, twilight, moonlight, starlight, stardust, whisper, whispers, whispered, haunting, phantom, halo, throne, kingdom, fairytale, fate, destiny, wildfire, beneath, amidst, embrace, linger, lingering, unspoken, unbroken, undone, unravel, intertwined, resonate, cascade, kaleidoscope.
 
-**Over-used settings:** kitchen and television as stock props, "midnight", "3 a.m.", rain on the window, empty streets.
+Phrases: "soul on fire", "storm inside", "rise from the ashes", "in the dark", "through the night", "fading light", "city lights", "burning bright".
 
-The user can extend the list mid-conversation ("no kitchen, television, beneath"; "no days or hours in the lyric"). Treat those as banned for the rest of the project.
+### Avoid — allowed only when literal, never as metaphor or stock setting
+
+ghost(s), crown, chains, cage, wings, flames, electric, heartbeat, pulse, midnight, 3 a.m., kitchen, television, empty streets.
+
+"The crown of his cap was torn" is literal and fine. "You wear your pain like a crown" is AI-core. The validator warns on these so you double-check them.
+
+### Project-specific bans
+
+The user can extend the list mid-conversation ("no kitchen, television, beneath"; "no days or hours in the lyric"). Treat those as banned for the rest of the project, and pass them to the validator with `--ban`.
 
 ## What to write instead: concrete, filmable moments
 

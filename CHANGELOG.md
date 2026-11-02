@@ -4,9 +4,25 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-02
+
+Improvements from a blind test: a fresh Claude instance used only the skill folder to write a single.
+
+### Added
+
+- Validator prints the `Characters — …` count line in the exact format the skill requires, ready to paste.
+- Validator requires `no crowd`, warns when the crowd block isn't first, and warns when STYLE doesn't open with BPM.
+- Two-tier vocabulary check: **banned** words and phrases fail the prompt; **avoid** words (midnight, kitchen, heartbeat, crown…) warn so you confirm they're literal. The lists match `lyric-craft.md`.
+- Single concept format (title, theme, story, sonic direction, hook) in `SKILL.md` and `album-workflow.md`.
+- Rules for naming repeated sections, and for using backing vocals with a single lead singer.
+- README: "Works with any AI" section with ChatGPT Project/GPT setup (the creator's preferred tool), and an "About the creator" section.
+
 ### Changed
 
-- README: "Works with any AI" section (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) with step-by-step ChatGPT Project/GPT setup; notes that the creator prefers ChatGPT for generating songs.
+- Character budget states upfront that STYLE + EXCLUDE ≤ 1,000 is the binding limit: plan STYLE ≈ 700 + EXCLUDE ≈ 250.
+- UPPERCASE guidance for first generations: one or two elements, the one the user stressed or the genre-defining one.
+- Concept-before-prompt allows both in one reply when the user explicitly asks.
+- Examples now open STYLE with BPM/key and include the full crowd block.
 
 ## [1.0.0] - 2026-11-02
 
@@ -18,5 +34,6 @@ All notable changes to this project are documented here. The format follows [Kee
 - Four worked examples, Portuguese starter prompt for other chat assistants, Claude Code plugin and marketplace manifests.
 - Test suite, CI, issue and pull request templates.
 
-[Unreleased]: https://github.com/jasonmello/awesome-suno-prompt-skill/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/jasonmello/awesome-suno-prompt-skill/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/jasonmello/awesome-suno-prompt-skill/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jasonmello/awesome-suno-prompt-skill/releases/tag/v1.0.0

@@ -1,12 +1,16 @@
 # EXCLUDE library
 
-Build EXCLUDE from blocks: **base** + **genre guard** + **intro/ending** + **voice guard** + **theme SFX**. Aim for 15–25 items. Exclude what Suno *tends to add*, not everything you can imagine — a 60-item list eats the 1,000-character budget STYLE needs.
+Build EXCLUDE from blocks: **base** + **genre guard** + **intro/ending** + **voice guard** + **theme SFX**. Aim for 15–20 items. Exclude what Suno *tends to add*, not everything you can imagine — a 60-item list eats the 1,000-character budget STYLE needs.
 
-## Base (always first)
+## Base (always first, in this order)
 
 ```
 crowd noise, audience, applause, crowd chants, no crowd
 ```
+
+The validator fails a prompt missing any of these five and warns when they aren't the first five items.
+
+**Budget:** EXCLUDE shares 1,000 characters with STYLE. Plan ~250 characters (about 15–20 items) so STYLE keeps ~700.
 
 Add when the song should feel like a studio record: `live ambience, live venue ambience, concert ambience`.
 
@@ -35,7 +39,7 @@ Add when the song should feel like a studio record: `live ambience, live venue a
 
 | Want | Exclude |
 |---|---|
-| One male rock singer only | `female vocals, duet, guest singer, choir, gang vocals` |
+| One male rock singer only (his own doubles/harmonies are fine) | `female vocals, duet, guest singer, choir, gang vocals` |
 | Rock voice over R&B groove | `R&B vocals, soul vocals, soul runs, melisma, vocal runs, crooning, breathy falsetto, gospel ad-libs` |
 | Natural voice | `robotic tuning, robotic vocals, excessive vocal runs, overproduced vocal stacks` |
 | Guest sings only their section | `overlapping singers, alternating voices within sections, mixed backing vocals` |

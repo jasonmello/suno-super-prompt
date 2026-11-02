@@ -28,6 +28,16 @@ Two layouts both work; pick one per song and stay consistent.
 - **Prose lines** (more compact, good for long songs near the 5,000-char limit): sentences separated by periods inside a section, stanzas separated by a blank line.
 - **Broken lines** (classic lyric sheet): one sung phrase per line. Easier to read rhythm and line length.
 
+## Naming repeated sections
+
+- **Number sections whose lyrics change:** `[Verse 1]`, `[Verse 2]`, `[Pre-Chorus 2]`.
+- **Repeat the exact tag for identical repeats:** a chorus sung the same way twice is `[Chorus]` both times — it helps Suno reuse the melody.
+- **Rename variants:** a chorus that's cut down, delayed or rewritten gets its own name — `[Short Chorus]`, `[Half-Chorus]`, `[Final Chorus]`.
+
+## Backing vocals with a single lead singer
+
+"One singer only" means one *person*. Doubles and harmonies of that same voice are fine — say so: `restrained male doubles only`, `light male harmony on the last line`. Keep `( )` echoes short and rare. Exclude what would add other people: `female vocals, duet, gang vocals, choir`.
+
 ## Section vocabulary (go beyond Intro/Verse/Chorus)
 
 Openings: `[Opening Riff]`, `[Opening Hook]` (chorus sung first), `[Opening Verse]` (vocal on beat one), `[Instrumental Lead-In]`, `[Instrumental Intro]`, `[False Start — Instrumental]`, `[Electronic Opening]`.

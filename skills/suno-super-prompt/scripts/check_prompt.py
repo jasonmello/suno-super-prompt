@@ -29,16 +29,26 @@ EXCLUDE_LIMIT = 1000
 STYLE_EXCLUDE_LIMIT = 1000
 NEAR_LIMIT = 0.95
 
-REQUIRED_EXCLUDES = ["crowd noise", "audience", "applause", "crowd chants"]
+CROWD_BLOCK = ["crowd noise", "audience", "applause", "crowd chants", "no crowd"]
 
+# Keep in sync with references/lyric-craft.md.
+# BANNED fails the prompt: never acceptable in sung text.
 BANNED = [
     "neon", "static", "velvet", "echo", "echoes", "shadow", "shadows", "ember", "embers",
-    "ashes", "ignite", "ignites", "inferno", "shattered", "fractured", "tapestry", "symphony",
-    "canvas", "mosaic", "labyrinth", "abyss", "void", "cosmos", "celestial", "ethereal",
-    "eternal", "infinite", "horizon", "twilight", "moonlight", "starlight", "stardust",
-    "whisper", "whispers", "whispered", "haunting", "phantom", "halo", "throne", "kingdom",
-    "fairytale", "destiny", "wildfire", "beneath", "amidst", "embrace", "linger", "lingering",
-    "unspoken", "unbroken", "unravel", "intertwined", "resonate", "cascade", "kaleidoscope",
+    "ashes", "spark", "sparks", "ignite", "ignites", "inferno", "shattered", "fractured",
+    "tapestry", "symphony", "canvas", "mosaic", "labyrinth", "abyss", "void", "cosmos",
+    "celestial", "ethereal", "eternal", "infinite", "horizon", "twilight", "moonlight",
+    "starlight", "stardust", "whisper", "whispers", "whispered", "haunting", "phantom", "halo",
+    "throne", "kingdom", "fairytale", "fate", "destiny", "wildfire", "beneath", "amidst",
+    "embrace", "linger", "lingering", "unspoken", "unbroken", "undone", "unravel", "intertwined",
+    "resonate", "cascade", "kaleidoscope",
+    "soul on fire", "storm inside", "rise from the ashes", "in the dark", "through the night",
+    "fading light", "city lights", "burning bright",
+]
+# AVOID warns: fine when literal, AI-core when used as metaphor or stock setting.
+AVOID = [
+    "ghost", "ghosts", "crown", "chains", "cage", "wings", "flames", "electric", "heartbeat",
+    "pulse", "midnight", "3 a.m.", "3am", "kitchen", "television", "empty streets",
 ]
 
 LABELS = ("TITLE", "LYRICS", "STYLE", "EXCLUDE")
@@ -104,18 +114,30 @@ def main():
             warnings.append(f"{name} is {size}/{limit} chars, within 5% of the limit")
 
     excl_lower = exclude.lower()
-    for item in REQUIRED_EXCLUDES:
-        if item not in excl_lower:
+    excl_items = [i.strip(" .") for i in excl_lower.split(",")]
+    for item in CROWD_BLOCK:
+        if item not in excl_items:
             errors.append(f"EXCLUDE is missing '{item}'")
+    if exclude and all(i in excl_items for i in CROWD_BLOCK) and excl_items[:5] != CROWD_BLOCK:
+        warnings.append("EXCLUDE should start with: " + ", ".join(CROWD_BLOCK))
 
-    banned = set(w.lower() for w in BANNED + args.ban)
-    sung = (fields.get("TITLE", "") + " " + sung_text(lyrics)).lower()
-    hits = sorted({w for w in banned if re.search(r"\b%s\b" % re.escape(w), sung)})
+    sung = " " + (title + " " + sung_text(lyrics)).lower() + " "
+
+    def found(words):
+        return sorted({w.lower() for w in words
+                       if re.search(r"(?<![\w])%s(?![\w])" % re.escape(w.lower()), sung)})
+
+    hits = found(BANNED + args.ban)
     if hits:
         errors.append("banned words in lyrics/title: " + ", ".join(hits))
+    soft = [w for w in found(AVOID) if w not in hits]
+    if soft:
+        warnings.append("check these are literal, not AI-core metaphors: " + ", ".join(soft))
 
     if style and not re.search(r"\b\d{2,3}\s*BPM\b", style, re.IGNORECASE):
         warnings.append("STYLE has no BPM")
+    elif style and not re.match(r"\s*\d{2,3}\s*BPM\b", style, re.IGNORECASE):
+        warnings.append("STYLE should open with BPM, key and tuning")
 
     sections = re.findall(r"\[([^\[\]]+)\](?!\])(\s*\[\[)?", lyrics)
     bare = [name for name, has_dir in sections if not has_dir]
@@ -125,7 +147,9 @@ def main():
     if "fade-out" not in excl_lower and "fade out" not in excl_lower:
         warnings.append("'fade-out' not excluded (fine only if a fade is intended)")
 
-    print("  ·  ".join(f"{name}: {size}/{limit}" for name, size, limit in counts))
+    # Same format the skill asks to print under every prompt; paste it as is.
+    print("Characters — " + " · ".join(
+        f"{name} {size:,}/{limit:,}" for name, size, limit in counts if name != "TITLE"))
     for e in errors:
         print("ERROR  ", e)
     for w in warnings:

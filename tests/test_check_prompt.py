@@ -71,7 +71,14 @@ class Limits(unittest.TestCase):
         prompt = build(exclude_len=200) + "\nCharacters — LYRICS 40/5,000 · STYLE 40/1,000\n"
         code, out = run(prompt)
         self.assertEqual(code, 0)
-        self.assertIn("EXCLUDE: 200/1000", out)
+        self.assertIn("EXCLUDE 200/1,000", out)
+
+    def test_prints_count_line_in_skill_format(self):
+        _, out = run(build(lyrics_len=3289, style_len=786, exclude_len=209))
+        self.assertEqual(
+            out.splitlines()[0],
+            "Characters — LYRICS 3,289/5,000 · STYLE 786/1,000 · EXCLUDE 209/1,000 · STYLE+EXCLUDE 995/1,000",
+        )
 
 
 class Rules(unittest.TestCase):
@@ -80,6 +87,34 @@ class Rules(unittest.TestCase):
         code, out = run(prompt)
         self.assertEqual(code, 1)
         self.assertIn("missing 'crowd noise'", out)
+
+    def test_no_crowd_is_required(self):
+        prompt = build().replace(", no crowd", "")
+        code, out = run(prompt)
+        self.assertEqual(code, 1)
+        self.assertIn("missing 'no crowd'", out)
+
+    def test_crowd_block_order_warns(self):
+        prompt = build().replace("EXCLUDE: crowd noise,", "EXCLUDE: fade-in, crowd noise,")
+        code, out = run(prompt)
+        self.assertEqual(code, 0)
+        self.assertIn("EXCLUDE should start with", out)
+
+    def test_style_must_open_with_bpm(self):
+        prompt = build().replace("STYLE: 120 BPM, A minor. ", "STYLE: Dark rock, 120 BPM. ")
+        code, out = run(prompt)
+        self.assertEqual(code, 0)
+        self.assertIn("STYLE should open with BPM", out)
+
+    def test_banned_phrase(self):
+        code, out = run(build(lyrics="[Verse] [[x]] We ran through the night"))
+        self.assertEqual(code, 1)
+        self.assertIn("through the night", out)
+
+    def test_avoid_words_only_warn(self):
+        code, out = run(build(lyrics="[Verse] [[x]] Back by midnight with the kitchen light on"))
+        self.assertEqual(code, 0)
+        self.assertIn("kitchen, midnight", out)
 
     def test_banned_words_in_sung_text(self):
         code, out = run(build(lyrics="[Verse] [[Bass leads.]] Neon echoes beneath the sky"))

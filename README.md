@@ -21,7 +21,7 @@
 
 An open-source AI skill that turns any AI assistant (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) into the **creative director and producer** of your band. It writes complete Suno **SUPER PROMPTS** (title, lyrics with production directions, style and exclude), always within Suno's character limits.
 
-It packages techniques learned across several albums, EPs and singles:
+It packages techniques learned across several albums, EPs and singles by a creator with **2+ years of intensive AI-music production** and **monetized releases on Spotify, Apple Music, YouTube Music** and other platforms ([about the creator](#about-the-creator)):
 
 - A **STYLE** structure Suno follows (BPM, key, tuning, riff, instrument roles, vocal cast, arrangement map).
 - **EXCLUDE** blocks that stop crowd noise, slow intros, buried bass and theme sound effects.
@@ -42,7 +42,7 @@ Dad kept the engine running while I packed. One bag, two shirts, a speaker in th
 [Chorus] [[Wide distorted guitars, open drums, huge melodic hook. Deep bass remains prominent.]]
 I used to count the days till I could leave. Now I take the long way down our street. ... (Leave late.)
 
-STYLE: Modern dark alternative rock with an R&B rhythmic pocket ... 92 BPM, F# minor.
+STYLE: 92 BPM, F# minor, half-time verses. Modern dark alternative rock with an R&B rhythmic pocket ...
 DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT ... Raspy male tenor ... bass-led abrupt outro.
 
 EXCLUDE: crowd noise, audience, applause, crowd chants, no crowd, glossy pop vocals, buried bass, fade-out ...
@@ -150,7 +150,7 @@ tests/                           # validator test suite
 
 Uma skill de IA open source que transforma qualquer assistente (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) no **diretor criativo e produtor musical** da sua banda. Ela gera **SUPER PROMPTS** completos para o Suno (título, letra com direções de produção, style e exclude), sempre dentro dos limites de caracteres.
 
-Reúne as técnicas usadas na criação de vários álbuns, EPs e singles:
+Reúne as técnicas usadas na criação de vários álbuns, EPs e singles por um criador com **mais de 2 anos de experiência intensa em produção musical com IA** e **músicas monetizadas no Spotify, Apple Music, YouTube Music** e outras plataformas ([sobre o criador](#sobre-o-criador)):
 
 - **STYLE** estruturado do jeito que o Suno obedece: BPM, tom, afinação, riff, papel de cada instrumento, elenco vocal e mapa do arranjo.
 - Blocos de **EXCLUDE** contra público, intro lenta, baixo enterrado e efeitos sonoros do tema.
@@ -213,6 +213,20 @@ TITLE **80** · LYRICS **5.000** · STYLE **1.000** · EXCLUDE **1.000** · STYL
 6. **Fale três vezes**: nas `[[ ]]`, no STYLE em MAIÚSCULAS e o oposto no EXCLUDE.
 7. **Sem nomes de artistas no STYLE.**
 8. **Exclua o som literal do tema**, como tiros numa música de guerra.
+
+---
+
+## About the creator
+
+**Jason Mello** ([@jasonmello](https://github.com/jasonmello)) has over **two years of intensive, hands-on work** producing music with AI. His releases are **monetized and distributed on Spotify, Apple Music, YouTube Music** and other streaming platforms.
+
+Every rule in this skill comes from that practice: the fixes that made Suno obey, and the lyric standards that kept songs from sounding machine-made. ChatGPT is his day-to-day tool for writing the songs, and the skill is built to work with any AI.
+
+## Sobre o criador
+
+**Jason Mello** ([@jasonmello](https://github.com/jasonmello)) tem **mais de dois anos de experiência intensa** produzindo música com IA. Suas músicas são **monetizadas e distribuídas no Spotify, Apple Music, YouTube Music** e outras plataformas de streaming.
+
+Cada regra desta skill vem dessa prática: as correções que fizeram o Suno obedecer e o padrão de letra que evita músicas com cara de máquina. O ChatGPT é a ferramenta do dia a dia dele para escrever as músicas, e a skill foi feita para funcionar com qualquer IA.
 
 ---
 

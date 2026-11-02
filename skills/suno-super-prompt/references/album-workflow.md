@@ -23,6 +23,18 @@ Album role checklist (12 tracks): opener/manifesto, 2–3 big singles, 1–2 fes
 
 For a concept EP you can also specify per track: structure, direction and a "story detail" — a single concrete image that makes the track unforgettable (e.g. "the family brings a photo taken that morning. He's in it.").
 
+### Single concept
+
+A standalone single gets a compact concept:
+
+- **Title**
+- **Theme** in one line (the object or situation the song is about)
+- **Story** in 3–5 sentences of concrete moments, including how it ends
+- **Sonic direction**: BPM, key/tuning, genre blend, how it opens, signature riff or motif, vocal delivery
+- **Chorus hook line**, and how it changes in the final chorus
+
+If the user asks for "concept and prompt" in one message, give the concept and then the SUPER PROMPT in the same reply.
+
 ## 3. Track pitch (when the user asks "what's next?")
 
 Give: title, 3–4 sentence story, the chorus hook line, BPM + sonic signature, and how it connects to the previous track. Don't write the prompt yet.
