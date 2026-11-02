@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- Source for assets/social-preview.png (1280x640). Render with:
+     "Google Chrome" --headless --hide-scrollbars --window-size=1280,640 --screenshot=social-preview.png social-preview.html -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --ink: #0f0e0d; --bone: #ece5d6; --dim: #8d8578; --red: #e0383e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; background: var(--ink); }
+  body {
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+    color: var(--bone);
+    position: relative;
+    padding: 72px 80px;
+  }
+  /* faint ruled lines, like a lyric notebook */
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0 39px, rgba(236,229,214,.045) 39px 40px);
+  }
+  .tape {
+    position: absolute; top: 0; left: 80px; width: 10px; height: 640px; background: var(--red);
+  }
+  .grid { position: relative; display: grid; grid-template-columns: 1fr 470px; gap: 64px; height: 100%; }
+  .kicker {
+    font: 600 18px/1 "Menlo", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--red);
+    margin: 4px 0 22px 28px;
+  }
+  h1 {
+    font-family: "Avenir Next Condensed", "Avenir Next", sans-serif;
+    font-weight: 800; font-size: 86px; line-height: .9; letter-spacing: -.01em; text-transform: uppercase;
+    margin-left: 28px;
+  }
+  h1 em { font-style: normal; color: var(--red); }
+  .grid > div:first-child { align-self: center; }
+  .tag {
+    margin: 30px 0 0 28px; font-size: 27px; line-height: 1.3; font-weight: 500; max-width: 600px;
+  }
+  .tag b { font-weight: 700; }
+  .works {
+    margin: 34px 0 0 28px;
+    font: 500 17px/1 "Menlo", monospace; color: var(--dim); letter-spacing: .04em;
+  }
+  .works span { color: var(--bone); }
+  .sheet {
+    align-self: center;
+    font: 400 17px/1.55 "Menlo", monospace; color: var(--dim);
+    border-left: 2px solid rgba(236,229,214,.15); padding-left: 28px;
+  }
+  .sheet .sec { color: var(--bone); font-weight: 700; }
+  .sheet .dir { color: var(--red); }
+  .sheet .lyr { color: var(--bone); }
+  .sheet .lbl { color: var(--red); font-weight: 700; }
+  .sheet p + p { margin-top: 14px; }
+</style>
+</head>
+<body>
+  <div class="tape"></div>
+  <div class="grid">
+    <div>
+      <div class="kicker">Suno · SUPER PROMPT method</div>
+      <h1>Awesome<br>Suno Prompt<br><em>Skill</em></h1>
+      <p class="tag">Lyrics, style &amp; exclude prompts that sound like <b>a real band</b>, not AI.</p>
+      <div class="works">works with <span>ChatGPT · Claude · Gemini · any AI</span></div>
+    </div>
+    <div class="sheet">
+      <p><span class="sec">[Chorus]</span> <span class="dir">[[Wide guitars on beat one.<br>Deep bass stays loud.]]</span><br>
+         <span class="lyr">I used to leave early.<br>Now I leave late.</span> (Leave late.)</p>
+      <p><span class="lbl">STYLE:</span> 150 BPM, F# minor, drop F#.<br>Raspy male tenor, cracked belts.<br>MASSIVE GUITARS ON BEAT ONE…</p>
+      <p><span class="lbl">EXCLUDE:</span> crowd noise, audience,<br>applause, no crowd, fade-out…</p>
+      <p>Characters — STYLE+EXCLUDE 948/1,000</p>
+    </div>
+  </div>
+</body>
+</html>

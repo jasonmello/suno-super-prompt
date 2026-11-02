@@ -1,9 +1,14 @@
 <div align="center">
 
+[![Awesome Suno Prompt Skill — lyrics, style and exclude prompts that sound like a real band, not AI](assets/social-preview.png)](https://jasonmello.github.io/awesome-suno-prompt-skill/)
+
 # Awesome Suno Prompt Skill
 
-**Write Suno prompts that sound like a real band, not AI.**
-**Prompts para o Suno que soam como banda de verdade, não como IA.**
+**Suno AI prompts that sound like a real band, not AI.** Free, open-source SUPER PROMPT method for Suno lyrics, style and exclude, for ChatGPT, Claude, Gemini and any AI.
+
+**Prompts para o Suno AI que soam como banda de verdade, não como IA.** Método gratuito e open source para letra, style e exclude no Suno, para ChatGPT, Claude, Gemini e qualquer IA.
+
+**[Website](https://jasonmello.github.io/awesome-suno-prompt-skill/)** · **[Quick start](#works-with-any-ai)** · **[Examples](skills/suno-super-prompt/examples)**
 
 [![CI](https://github.com/jasonmello/awesome-suno-prompt-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonmello/awesome-suno-prompt-skill/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
