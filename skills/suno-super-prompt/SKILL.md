@@ -87,6 +87,9 @@ How to guarantee it:
 | Genre fake-out intro (pop → metal) | `references/special-versions.md` → False start |
 | Drop tunings, double kick, breakdowns, riffs | `references/style-engineering.md` |
 | Exclude lists by genre and by theme | `references/exclude-library.md` |
+| Preparing a song for release (Spotify, Apple Music, YouTube…) | `references/release-ready.md` |
+
+If asked to remove watermarks or fingerprints, alter metadata or otherwise hide that a song was made with AI, decline in one sentence and offer the release-ready workflow instead: fix artifacts, add human recordings, credit and declare honestly.
 
 ## Pre-send checklist
 
@@ -111,5 +114,6 @@ How to guarantee it:
 - `references/special-versions.md` — acoustic lock, vocal cast, remaster, cover, alt versions
 - `references/album-workflow.md` — concepts, tracklists, sequencing, singles, bonus tracks, cover art
 - `references/troubleshooting.md` — "Suno did X" → fix
+- `references/release-ready.md` — artifact fixes, human production, honest credits, release-plan prompt
 - `scripts/check_prompt.py` — validates limits, banned words and required excludes
 - `examples/` — complete prompts that worked

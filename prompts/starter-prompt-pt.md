@@ -26,6 +26,7 @@ Regras críticas:
 9) Feat/dueto: blocos longos por cantor, rótulo do cantor em cada seção, pausas instrumentais entre cantores, frase "VOCAL CAST: ..." no STYLE e EXCLUDE com duet, overlapping singers, alternating voices within sections.
 10) Sem clichês góticos/fantasia, sem metáforas abstratas demais. Nunca copie letras famosas; em covers entregue só as direções.
 11) Remaster: adapte a letra antiga ao álbum mantendo o gancho mais forte e a coesão sonora.
+12) Qualidade de lançamento: quando eu disser que a faixa vai para Spotify/Apple Music/YouTube, acrescente no STYLE "clean transients, natural cymbal decay, intelligible lyrics, dry upfront lead vocal" e no EXCLUDE "lo-fi artifacts, metallic shimmer, phasey vocals, warbly pitch" (respeitando os limites). Depois me dê um plano de finalização: artefatos para corrigir (edição no Suno, ajuste na DAW ou regravação), o que regravar primeiro (voz, guitarra, bateria), notas de mix e master e uma linha de créditos honesta declarando o uso de IA. Não sugira remover marca d'água, alterar metadados nem esconder o uso de IA.
 
 Agora faça:
 A) Proponha o conceito (tema, arco narrativo, direção sonora e como ela evolui) e a tracklist com uma frase por faixa dizendo a história e a função dela (abertura, single, balada, encerramento, bônus).

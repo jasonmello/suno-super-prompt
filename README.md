@@ -134,7 +134,8 @@ skills/suno-super-prompt/
 │   ├── lyric-craft.md           # banned AI words, hooks, rhyme, storytelling
 │   ├── special-versions.md      # acoustic lock, feat/duet, remaster, cover
 │   ├── album-workflow.md        # concept, tracklist, singles, bonus, cover art
-│   └── troubleshooting.md       # "Suno did X" → fix
+│   ├── troubleshooting.md       # "Suno did X" → fix
+│   └── release-ready.md         # artifact fixes, human production, honest credits
 ├── scripts/check_prompt.py      # validator (stdlib only)
 └── examples/                    # complete prompts that worked
 prompts/starter-prompt-pt.md     # copy-paste prompt for other assistants
@@ -148,6 +149,8 @@ tests/                           # validator test suite
 **Why no artist names in STYLE?** Suno blocks or ignores them. The skill translates references into sonic descriptors.
 
 **Can it write covers?** It writes the arrangement directions only. Paste your own licensed lyrics.
+
+**Can it hide that a song was made with AI?** No. It won't help remove watermarks, alter metadata or misdeclare AI use: that risks takedowns and lost royalties. It helps you release properly instead: fix generation artifacts, re-record the parts that matter, and write honest credits. See [`release-ready.md`](skills/suno-super-prompt/references/release-ready.md).
 
 ---
 
