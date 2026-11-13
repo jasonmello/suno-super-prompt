@@ -24,35 +24,50 @@
 
 ## English
 
-An open-source AI skill that turns any AI assistant (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) into the **creative director and producer** of your band. It writes complete Suno **SUPER PROMPTS** (title, lyrics with production directions, style and exclude), always within Suno's character limits.
+An open-source AI skill that turns any AI assistant (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) into the **creative director and producer** of your band or project, in any genre (pop, rock, metal, hip-hop, R&B, electronic, country, sertanejo, funk, reggaeton…). It starts with a short conversation about the style you want, then writes complete Suno **SUPER PROMPTS** (title, lyrics with production directions, style and exclude), always within Suno's character limits.
 
 It packages techniques learned across several albums, EPs and singles by a creator with **2+ years of intensive AI-music production** and **monetized releases on Spotify, Apple Music, YouTube Music** and other platforms ([about the creator](#about-the-creator)):
 
-- A **STYLE** structure Suno follows (BPM, key, tuning, riff, instrument roles, vocal cast, arrangement map).
+- A short **intake conversation** (style, references, voice, language, theme) before the first song.
+- A **genre playbook** with BPM ranges, STYLE cores, vocal words and EXCLUDE guards for 20 genres.
+- A lean **STYLE** structure Suno follows (BPM, key, riff, instrument roles, vocal cast, arrangement map).
 - **EXCLUDE** blocks that stop crowd noise, slow intros, buried bass and theme sound effects.
 - An **acoustic lock** for takes that are 100% voice and acoustic guitar.
 - A **vocal cast** method so Suno respects singer order in feats and duets.
-- **Lyric rules** against AI-core: banned vocabulary, concrete storytelling, singable choruses.
-- A **validator** that fails any prompt over the limits.
+- **Lyric rules** against AI-core: one sung phrase per line, repeated hooks, banned vocabulary, singable choruses.
+- A **validator** that fails any prompt over the limits and flags run-on lines, inline tags and hooks that never repeat.
 
 ### Quick look
 
 ```text
-TITLE: LEAVE LATE
+TITLE: KEEP THE GOOD PART
 
 LYRICS:
-[Verse 1] [[Close, dry, raspy vocal. Bass leads; sparse muted guitar, loose half-time pocket.]]
-Dad kept the engine running while I packed. One bag, two shirts, a speaker in the back. ...
 
-[Chorus] [[Wide distorted guitars, open drums, huge melodic hook. Deep bass remains prominent.]]
-I used to count the days till I could leave. Now I take the long way down our street. ... (Leave late.)
+[Verse 1]
+[[One raspy male rock tenor, sharp chest-led singing over a relentless syncopated riff.]]
+You picked the picture where I'm laughing.
+Cut the argument out of frame.
+Everybody says we looked so happy.
+I know exactly what you'd say.
 
-STYLE: 92 BPM, F# minor, half-time verses. Modern dark alternative rock with an R&B rhythmic pocket ...
-DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT ... Raspy male tenor ... bass-led abrupt outro.
+[Chorus]
+[[Huge melodic hook over heavy open chords. Strong repeated rhythm on KEEP THE GOOD PART.]]
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
 
-EXCLUDE: crowd noise, audience, applause, crowd chants, no crowd, glossy pop vocals, buried bass, fade-out ...
+[[Hard stop.]]
 
-Characters — LYRICS 3,289/5,000 · STYLE 786/1,000 · EXCLUDE 209/1,000 · STYLE+EXCLUDE 995/1,000
+STYLE:
+156 BPM. Four-bar bubblegum synth-pop fakeout in A major: glossy plucked SYNTH ...
+Abrupt cut into A minor, seven-string drop-A metal ... Huge singable hook.
+
+EXCLUDE:
+crowd noise, audience, applause, crowd chants, no crowd, acoustic guitar, electric bass, ... fade-out.
+
+Characters — LYRICS 4,104/5,000 · STYLE 736/1,000 · EXCLUDE 233/1,000 · STYLE+EXCLUDE 969/1,000
 ```
 
 `[ ]` section · `[[ ]]` production direction · `( )` backing vocal · UPPERCASE line = shouted/screamed
@@ -66,9 +81,9 @@ The skill is plain text: rules, references and examples. Any assistant that acce
 **ChatGPT (creator's choice)**
 
 1. Create a **Project** (or a custom **GPT**).
-2. Paste [`SKILL.md`](skills/suno-super-prompt/SKILL.md) into the instructions. If you write in Portuguese, the [starter prompt](prompts/starter-prompt-pt.md) works as well.
+2. Paste [`SKILL.md`](skills/suno-super-prompt/SKILL.md) into the instructions. Or paste the shorter [starter prompt](prompts/starter-prompt.md).
 3. Upload the files from [`references/`](skills/suno-super-prompt/references) and [`examples/`](skills/suno-super-prompt/examples) as project files / knowledge.
-4. Start with: *"Create the concept for my band's new EP…"* and go track by track.
+4. Start with: *"Let's make a song"*. It asks what style you want and builds the first track with you.
 
 ChatGPT can run `check_prompt.py` in its code tool when you upload it, which gives you exact character counts.
 
@@ -96,7 +111,11 @@ cp -r suno-super-prompt/skills/suno-super-prompt ~/.claude/skills/
 
 Just ask:
 
+> "Let's make a song." (it asks what style you want, then a few short questions)
+
 > "Create a 5-track EP concept for my post-hardcore band. Raspy male vocalist. References: My Chemical Romance, Sum 41, Bad Omens."
+
+> "A sertanejo single in Portuguese, male duo, about a guy who keeps going back to the same bar."
 
 > "Next track."
 
@@ -128,17 +147,18 @@ Limits can be changed with flags (`--style-limit`, `--exclude-limit`, `--combine
 skills/suno-super-prompt/
 ├── SKILL.md                     # role, workflow, rules, limits, checklist
 ├── references/
-│   ├── super-prompt-format.md   # bracket grammar, section vocabulary
+│   ├── genre-playbook.md        # genre cards: BPM, STYLE core, vocals, guards
+│   ├── super-prompt-format.md   # bracket grammar, layout, section vocabulary
 │   ├── style-engineering.md     # how to write STYLE Suno obeys
 │   ├── exclude-library.md       # EXCLUDE blocks by genre, voice, theme
-│   ├── lyric-craft.md           # banned AI words, hooks, rhyme, storytelling
+│   ├── lyric-craft.md           # banned AI words, repetition, hooks, rhyme
 │   ├── special-versions.md      # acoustic lock, feat/duet, remaster, cover
 │   ├── album-workflow.md        # concept, tracklist, singles, bonus, cover art
 │   ├── troubleshooting.md       # "Suno did X" → fix
 │   └── release-ready.md         # artifact fixes, human production, honest credits
 ├── scripts/check_prompt.py      # validator (stdlib only)
 └── examples/                    # complete prompts that worked
-prompts/starter-prompt-pt.md     # copy-paste prompt for other assistants
+prompts/starter-prompt.md        # copy-paste prompt for other assistants
 tests/                           # validator test suite
 ```
 
@@ -156,15 +176,17 @@ tests/                           # validator test suite
 
 ## Português
 
-Uma skill de IA open source que transforma qualquer assistente (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) no **diretor criativo e produtor musical** da sua banda. Ela gera **SUPER PROMPTS** completos para o Suno (título, letra com direções de produção, style e exclude), sempre dentro dos limites de caracteres.
+Uma skill de IA open source que transforma qualquer assistente (ChatGPT, Claude, Gemini, Grok, DeepSeek, Copilot…) no **diretor criativo e produtor musical** da sua banda ou projeto, em qualquer gênero (pop, rock, metal, rap, R&B, eletrônica, sertanejo, funk, pagode, reggaeton…). Ela começa com uma conversa curta sobre o estilo que você quer e depois gera **SUPER PROMPTS** completos para o Suno (título, letra com direções de produção, style e exclude), sempre dentro dos limites de caracteres.
 
 Reúne as técnicas usadas na criação de vários álbuns, EPs e singles por um criador com **mais de 2 anos de experiência intensa em produção musical com IA** e **músicas monetizadas no Spotify, Apple Music, YouTube Music** e outras plataformas ([sobre o criador](#sobre-o-criador)):
 
-- **STYLE** estruturado do jeito que o Suno obedece: BPM, tom, afinação, riff, papel de cada instrumento, elenco vocal e mapa do arranjo.
+- Uma **conversa inicial** (estilo, referências, voz, idioma, tema) antes da primeira música.
+- Um **guia de gêneros** com BPM, base de STYLE, voz e EXCLUDE para 20 gêneros.
+- **STYLE** enxuto do jeito que o Suno obedece: BPM, tom, riff, papel de cada instrumento, elenco vocal e mapa do arranjo.
 - Blocos de **EXCLUDE** contra público, intro lenta, baixo enterrado e efeitos sonoros do tema.
 - **Trava acústica** para versões 100% voz e violão.
 - Método de **elenco vocal** para o Suno respeitar a ordem dos cantores em feats e duetos.
-- **Regras de letra** contra "AI-core": palavras proibidas, storytelling concreto, refrões cantáveis.
+- **Regras de letra** contra "AI-core": uma frase cantada por linha, ganchos repetidos, palavras proibidas, refrões cantáveis.
 - **Validador** que reprova qualquer prompt acima dos limites.
 
 ### Funciona com qualquer IA
@@ -176,9 +198,9 @@ A skill é só texto: regras, referências e exemplos. Qualquer assistente que a
 **No ChatGPT (a escolha do criador):**
 
 1. Crie um **Projeto** (ou um **GPT** personalizado).
-2. Cole o [prompt inicial em português](prompts/starter-prompt-pt.md) ou o [`SKILL.md`](skills/suno-super-prompt/SKILL.md) nas instruções.
+2. Cole o [prompt inicial](prompts/starter-prompt.md) (em inglês) ou o [`SKILL.md`](skills/suno-super-prompt/SKILL.md) nas instruções.
 3. Envie os arquivos de [`references/`](skills/suno-super-prompt/references) e [`examples/`](skills/suno-super-prompt/examples) como arquivos do projeto.
-4. Comece com: *"Crie o conceito do novo EP da minha banda…"* e siga faixa a faixa.
+4. Comece com: *"Vamos criar uma música"*. Ela pergunta o estilo que você quer e monta a primeira faixa com você.
 
 Se você também enviar o `check_prompt.py`, o ChatGPT pode rodá-lo na ferramenta de código e conferir a contagem exata de caracteres.
 
@@ -198,6 +220,8 @@ Se você também enviar o `check_prompt.py`, o ChatGPT pode rodá-lo na ferramen
 **Claude.ai / app do Claude:** compacte a pasta `skills/suno-super-prompt` em `.zip` e envie em *Settings → Capabilities → Skills*.
 
 ### Como usar
+
+> "Vamos criar uma música." (ela pergunta o estilo e faz algumas perguntas curtas)
 
 > "Crie o conceito de um EP de 5 faixas para minha banda de post-hardcore. Vocal masculino rouco. Referências: My Chemical Romance, Sum 41, Bad Omens."
 

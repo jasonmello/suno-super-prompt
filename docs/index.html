@@ -140,11 +140,11 @@
 
 <section aria-labelledby="what">
   <h2 id="what">What you get</h2>
-  <p>Generic Suno prompts give generic songs: slow ambient intros, crowd noise, buried bass, lyrics full of neon and echoes. This skill turns your AI assistant into the <strong>creative director and producer</strong> of your band, and makes it write prompts Suno actually follows.</p>
+  <p>Generic Suno prompts give generic songs: slow ambient intros, crowd noise, buried bass, lyrics full of neon and echoes. This skill turns your AI assistant into the <strong>creative director and producer</strong> of your band or project, in any genre, and makes it write prompts Suno actually follows. It starts by asking what style you want to create.</p>
   <div class="grid three" style="margin-top:32px">
-    <div class="rule"><span class="n">01</span><h3>A STYLE Suno obeys</h3><p class="muted">BPM, key and tuning first, then riff, instrument roles, vocal cast and an arrangement map.</p></div>
+    <div class="rule"><span class="n">01</span><h3>Any genre, lean STYLE</h3><p class="muted">Genre cards from pop to metal, sertanejo and funk. BPM and key first, then riff, instrument roles, vocal cast and arrangement map.</p></div>
     <div class="rule"><span class="n">02</span><h3>EXCLUDE that works</h3><p class="muted">Blocks against crowd noise, slow intros, buried bass, unwanted voices and theme sound effects.</p></div>
-    <div class="rule"><span class="n">03</span><h3>Lyrics without AI-core</h3><p class="muted">Banned vocabulary, concrete storytelling, singable choruses with a twist at the end.</p></div>
+    <div class="rule"><span class="n">03</span><h3>Lyrics without AI-core</h3><p class="muted">One sung phrase per line, hooks that repeat, banned vocabulary, a twist in the final chorus.</p></div>
     <div class="rule"><span class="n">04</span><h3>100% acoustic lock</h3><p class="muted">Voice and acoustic guitar only. No surprise drums or electric lifts.</p></div>
     <div class="rule"><span class="n">05</span><h3>Feats in the right order</h3><p class="muted">A vocal-cast method so Suno respects who sings each section.</p></div>
     <div class="rule"><span class="n">06</span><h3>Always within limits</h3><p class="muted">A validator checks every field and prints the character count line.</p></div>
@@ -153,22 +153,34 @@
 
 <section aria-labelledby="format">
   <h2 id="format">The SUPER PROMPT format</h2>
-  <pre><span class="t-lbl">TITLE:</span> LEAVE LATE
+  <pre><span class="t-lbl">TITLE:</span> KEEP THE GOOD PART
 
 <span class="t-lbl">LYRICS:</span>
-<span class="t-sec">[Verse 1]</span> <span class="t-dir">[[Close, dry, raspy vocal. Bass leads; sparse muted guitar.]]</span>
-Dad kept the engine running while I packed. One bag, two shirts, a speaker in the back.
 
-<span class="t-sec">[Chorus]</span> <span class="t-dir">[[Wide distorted guitars, huge melodic hook. Deep bass remains prominent.]]</span>
-I used to count the days till I could leave. Now I take the long way down our street.
-I used to leave early. Now I leave late. <span class="t-dim">(Leave late.)</span>
+<span class="t-sec">[Verse 1]</span>
+<span class="t-dir">[[One raspy male rock tenor, sharp chest-led singing over a relentless riff.]]</span>
+You picked the picture where I'm laughing.
+Cut the argument out of frame.
+Everybody says we looked so happy.
+I know exactly what you'd say.
 
-<span class="t-lbl">STYLE:</span> 92 BPM, F# minor, half-time verses. Modern dark alternative rock with an R&amp;B pocket…
-DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT… Raspy male tenor… bass-led abrupt outro.
+<span class="t-sec">[Chorus]</span>
+<span class="t-dir">[[Huge melodic hook over heavy open chords. Strong repeated rhythm on KEEP THE GOOD PART.]]</span>
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
 
-<span class="t-lbl">EXCLUDE:</span> crowd noise, audience, applause, crowd chants, no crowd, buried bass, fade-out…
+<span class="t-dir">[[Hard stop.]]</span>
 
-<span class="t-dim">Characters — LYRICS 3,289/5,000 · STYLE 786/1,000 · EXCLUDE 209/1,000 · STYLE+EXCLUDE 995/1,000</span></pre>
+<span class="t-lbl">STYLE:</span>
+156 BPM. Four-bar bubblegum synth-pop fakeout in A major: glossy plucked SYNTH…
+Abrupt cut into A minor, seven-string drop-A metal… Huge singable hook.
+
+<span class="t-lbl">EXCLUDE:</span>
+crowd noise, audience, applause, crowd chants, no crowd, acoustic guitar, electric bass… fade-out.
+
+<span class="t-dim">Characters — LYRICS 4,104/5,000 · STYLE 736/1,000 · EXCLUDE 233/1,000 · STYLE+EXCLUDE 969/1,000</span></pre>
   <p class="muted" style="margin-top:16px"><code>[ ]</code> section · <code>[[ ]]</code> production direction · <code>( )</code> backing vocal · UPPERCASE line = shouted or screamed</p>
 
   <h3 style="margin-top:40px">Character limits</h3>
@@ -176,10 +188,10 @@ DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT… Raspy male tenor… bass-led abrupt
     <thead><tr><th>Field</th><th style="text-align:right">Limit</th><th style="text-align:right">Plan for</th></tr></thead>
     <tbody>
       <tr><td>Title</td><td class="num">80</td><td class="num">short</td></tr>
-      <tr><td>Lyrics (with all brackets)</td><td class="num">5,000</td><td class="num">2,500–4,600</td></tr>
-      <tr><td>Style</td><td class="num">1,000</td><td class="num">≈ 700</td></tr>
-      <tr><td>Exclude</td><td class="num">1,000</td><td class="num">≈ 250</td></tr>
-      <tr><td>Style + Exclude together</td><td class="num">1,000</td><td class="num">≤ 950</td></tr>
+      <tr><td>Lyrics (with all brackets)</td><td class="num">5,000</td><td class="num">2,500–4,200</td></tr>
+      <tr><td>Style</td><td class="num">1,000</td><td class="num">500–750</td></tr>
+      <tr><td>Exclude</td><td class="num">1,000</td><td class="num">200–250</td></tr>
+      <tr><td>Style + Exclude together</td><td class="num">1,000</td><td class="num">≤ 970</td></tr>
     </tbody>
   </table>
 </section>
@@ -187,7 +199,7 @@ DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT… Raspy male tenor… bass-led abrupt
 <section aria-labelledby="rules">
   <h2 id="rules">8 golden rules</h2>
   <div class="grid two">
-    <p><strong>1. No AI-core.</strong> No neon, static, velvet, echoes, shadows, beneath. Write objects, actions and short dialogue.</p>
+    <p><strong>1. No AI-core.</strong> No neon, static, velvet, echoes, shadows, beneath. One sung phrase per line, and a hook that keeps coming back.</p>
     <p><strong>2. Crowd block first.</strong> EXCLUDE starts with <code>crowd noise, audience, applause, crowd chants, no crowd</code>.</p>
     <p><strong>3. Vary the architecture.</strong> Opening hooks, turns, refrains, riff responses, half-choruses.</p>
     <p><strong>4. Singable choruses.</strong> Natural phrases, open vowels, and a final chorus that changes a line.</p>
@@ -214,7 +226,7 @@ DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT… Raspy male tenor… bass-led abrupt
       <h3>Claude Code</h3>
       <pre style="margin-top:8px">/plugin marketplace add jasonmello/suno-super-prompt
 /plugin install suno-super-prompt@suno-super-prompt</pre>
-      <p class="muted" style="margin-top:12px">Gemini, Grok, DeepSeek and others: paste SKILL.md or the <a href="https://github.com/jasonmello/suno-super-prompt/blob/main/prompts/starter-prompt-pt.md">starter prompt</a> at the start of the chat.</p>
+      <p class="muted" style="margin-top:12px">Gemini, Grok, DeepSeek and others: paste SKILL.md or the <a href="https://github.com/jasonmello/suno-super-prompt/blob/main/prompts/starter-prompt.md">starter prompt</a> at the start of the chat.</p>
     </div>
   </div>
 </section>

@@ -2,11 +2,12 @@
 
 ## 1. Artist profile (once per project)
 
-Collect or confirm, then reuse in every prompt:
+Collected in the intake conversation (`SKILL.md` → Intake), then reused in every prompt:
 
-- Band name and era (debut? 4th album after an emo record, a post-hardcore record and some metalcore singles?).
+- Style / genre and mood (load the card in `genre-playbook.md`).
+- Artist or band name and era (debut? 4th album after an emo record, a post-hardcore record and some metalcore singles?).
 - 3–6 references, each with *what* to take from it (vocal grit, riff style, arena hooks, groove).
-- Vocalist: register, texture, signature (e.g. "raspy male tenor, punk bite, rasps open on high notes").
+- Voice: who sings, register, texture, signature (e.g. "raspy male tenor, punk bite", "warm female pop alto", "Brazilian male duo in thirds").
 - Lyric language (default English) and words the user has banned.
 - Recurring production wishes (bass up front, double kick, drop tuning, no crowd).
 
@@ -29,7 +30,7 @@ A standalone single gets a compact concept:
 
 - **Title**
 - **Theme** in one line (the object or situation the song is about)
-- **Story** in 3–5 sentences of concrete moments, including how it ends
+- **Story** in 2–3 sentences: the situation, one or two concrete images, how it ends
 - **Sonic direction**: BPM, key/tuning, genre blend, how it opens, signature riff or motif, vocal delivery
 - **Chorus hook line**, and how it changes in the final chorus
 

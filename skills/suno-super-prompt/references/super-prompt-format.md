@@ -14,19 +14,27 @@
 | Mark | Meaning | Example |
 |---|---|---|
 | `[Section]` | Structure tag. Suno reads it as a section boundary. | `[Pre-Chorus]` |
-| `[[direction]]` | Production direction for the section that follows. Instruments, dynamics, vocal behaviour, what must not happen. | `[[Drums drop; bent guitar, deep bass. No crowd.]]` |
+| `[[direction]]` | Production direction, on its own line under the section tag. Instruments, dynamics, vocal behaviour, what must not happen. 1–3 short sentences. | `[[Drums drop; bent guitar, deep bass.]]` |
 | `(words)` | Backing vocal / echo. Keep short and rare. | `(Leave late.)` |
 | `UPPERCASE LINE` | Inside lyrics: a shouted or screamed line. | `I DON'T HAVE TO EARN THIS!` |
 | `[[Hard stop.]]` | Standalone direction between lines to control the ending or a silence. | `[[One beat of silence.]]` |
 
-Put the `[[ ]]` immediately after the `[Section]` tag, on the same line, then the lyric lines. A standalone `[[ ]]` between stanzas works for mid-section events (stops, silences, riff returns).
+## Layout (one phrase per line)
 
-## Lyric layout
+```
+[Chorus]
+[[Huge melodic hook over heavy open chords. Strong repeated rhythm on KEEP THE GOOD PART.]]
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
+```
 
-Two layouts both work; pick one per song and stay consistent.
-
-- **Prose lines** (more compact, good for long songs near the 5,000-char limit): sentences separated by periods inside a section, stanzas separated by a blank line.
-- **Broken lines** (classic lyric sheet): one sung phrase per line. Easier to read rhythm and line length.
+- `[Section]` alone on its line; its `[[direction]]` alone on the next line; then the lyrics. Never put lyrics on the tag line.
+- **One sung phrase per line**, cut where the singer breathes. A line rarely needs more than ~10 syllables (~55 characters); the validator warns above 70.
+- **Stanzas of 2–4 lines** (sometimes 5), separated by a blank line.
+- A standalone `[[...]]` between stanzas marks an event: `[[One beat of silence.]]`, `[[Four instrumental bars.]]`, and `[[Hard stop.]]` at the very end.
+- Never write a verse as a paragraph of sentences. Suno phrases melody by line breaks; run-on lines come out rushed, recited and robotic.
 
 ## Naming repeated sections
 
@@ -52,39 +60,67 @@ Singer labels (multi-vocal songs): `[Verse 1 — Male Lead]`, `[Female Solo]`, `
 
 1. **Instruments present** and their role ("Bass leads; sparse muted guitar").
 2. **Energy / density** ("Guitars choke off", "Full-width impact", "Pull back to bass and one clean guitar").
-3. **Vocal delivery** ("Close, dry, raspy vocal", "cracked melodic belt", "almost spoken but pitched").
+3. **Vocal delivery** ("Close raspy vocal", "cracked melodic belt", "almost spoken but pitched").
 4. **One negative** where Suno tends to drift ("No vocal chant", "No metal breakdown", "No female voice in this section").
 5. Optional **bar counts** ("Four bars", "Eight-bar solo") and **events** ("One-beat stop, then full band").
 
-Length: 1–3 short sentences. Acoustic songs need the full instrument lock in *every* direction (see `special-versions.md`).
+Length: 1–3 short sentences, under ~300 characters (the validator warns above that). Acoustic songs need the full instrument lock in *every* direction (see `special-versions.md`).
 
-## Annotated example (abridged)
+## Annotated example
+
+`examples/05-false-start-genre-switch-keep-the-good-part.txt` is the reference model for layout and density. Abridged:
 
 ```
-TITLE: DON'T CLEAN UP
+TITLE: KEEP THE GOOD PART
 
 LYRICS:
 
-[Opening Riff] [[Immediate full-band entrance. Tight low-tuned guitar hook, deep electric bass, punchy drums and short distorted synth accents. Four bars; no fade-in.]]
+[False Start — Instrumental]
+[[156 BPM. Four bars of bright bubblegum synth-pop in A major: glossy plucked SYNTH, playful ascending melody, programmed handclaps. No vocals, no guitar, no bass instruments.]]
 
-[Verse 1] [[Urgent raspy vocal over a driving bass groove. Clipped guitars leave space for the words.]] Someone put the chairs back wrong. Your jacket's hanging off the door. We got halfway through that song before you spilled yours on the floor.
+[Violent Switch]
+[[Cut the pop arrangement dead. Transform its melody into an A-minor drop-A guitar riff. Eight instrumental bars.]]
 
-[Refrain] [[Keep the chorus intimate at first: full deep bass, tight kick, restrained guitar. Open into heavy guitars on the fifth line.]] Don't clean up just yet. I like the proof that you were here. ...
+[Verse 1]
+[[One raspy male rock tenor, sharp chest-led singing over a relentless syncopated riff.]]
+You picked the picture where I'm laughing.
+Cut the argument out of frame.
+Everybody says we looked so happy.
+I know exactly what you'd say.
 
-[Instrumental Hook] [[Two bars of the main guitar hook. Bass doubles the low accents. No vocal chant.]]
+[Chorus]
+[[Huge melodic hook over heavy open chords. Strong repeated rhythm on KEEP THE GOOD PART.]]
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
 
 ...
 
-[Final Chorus] [[One-beat stop, then full-band release. Altered lyrics, highest emotional intensity.]] Won't clean up just yet. ...
+[Breakdown]
+[[One beat of silence. Crushing drop-A riff in half-time. First line sung low; final lines screamed clearly.]]
+I was there.
 
-[Outro] [[Opening riff returns, shorter and heavier. No atmospheric fade.]] Found your jacket on the chair. I'll keep it till you come again. [[Hard stop.]]
+I WAS THERE WHEN NO ONE WATCHED.
 
-STYLE: 138 BPM, B minor, drop B guitars. Modern electronic alternative metal, melodic post-hardcore, dark R&B verse groove. Immediate four-bar full-band riff; no slow opening. Deep electric bass with thick fundamentals and gritty definition stays prominent beneath guitars. Raspy male tenor: urgent conversational verses, cracked high melodic belts, restrained harmonies. First chorus starts over bass and kick, then opens halfway; later choruses hit wide immediately. Eight-bar melodic guitar solo. Altered final chorus; heavy riff outro and hard stop.
+...
 
-EXCLUDE: crowd noise, audience, applause, crowd chants, no crowd, live ambience, slow intro, grunge, ambient fade-in, generic chug breakdown, nonstop screaming, buried bass, robotic vocals, orchestral swells.
+[Ending]
+[[Two bars of the sugary intro synth alone. Abruptly interrupt it with one full-band guitar attack.]]
+You looked so happy.
+I helped you look like that.
+
+[[Hard stop.]]
+
+STYLE:
+156 BPM. Four-bar bubblegum synth-pop fakeout in A major: glossy plucked SYNTH, sweet ascending hook, programmed handclaps, light kick. Abrupt cut into A minor, seven-string drop-A metal. Transform the SAME pop motif into a memorable heavy guitar riff. ...
+
+EXCLUDE:
+crowd noise, audience, applause, crowd chants, no crowd, acoustic guitar, fingerpicking, strummed intro, electric bass, synth bass, female vocals, rap, choir, country, melisma, robotic tuning, constant screaming, EDM drops, fade-out.
 ```
 
 Why it works:
-- The first chorus is deliberately held back and the direction says *when* it opens — Suno follows dynamic maps better than adjectives.
-- The outro calls back an object from verse 1 (the jacket) — story closure.
-- STYLE repeats the arrangement map in one line, so even if Suno skims the lyrics directions it still gets the shape.
+- Every section is easy to scan: tag, short direction, short lines. Suno phrases the melody where the lines break.
+- The chorus comes back word for word three times (plus a half-chorus); the hook line opens and closes it.
+- The pop motif from the intro returns in the Riff Return, the Instrumental Collision and the Ending, so the genre switch feels designed, not random.
+- STYLE is terse fragments in the order Suno needs them; nothing in it repeats what the directions already carry except the critical elements.

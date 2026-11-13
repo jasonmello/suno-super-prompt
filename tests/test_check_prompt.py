@@ -19,7 +19,7 @@ CROWD = "crowd noise, audience, applause, crowd chants, no crowd, fade-out"
 def build(title="T", lyrics_len=None, style_len=None, exclude_len=None, lyrics=None):
     """Build a prompt whose fields have exact character counts."""
     if lyrics is None:
-        head = "[Verse] [[Bass leads.]] "
+        head = "[Verse]\n[[Bass leads.]]\nla la\nla la\n"
         lyrics = head + "a" * ((lyrics_len or 40) - len(head))
     style = "120 BPM, A minor. "
     style += "x" * ((style_len or 40) - len(style))
@@ -129,6 +129,42 @@ class Rules(unittest.TestCase):
         code, out = run(build(lyrics="[Verse] [[x]] Back in the kitchen"), "--ban", "kitchen")
         self.assertEqual(code, 1)
         self.assertIn("kitchen", out)
+
+    def test_inline_section_warns(self):
+        code, out = run(build(lyrics="[Verse] [[Bass leads.]] Hold on\nHold on"))
+        self.assertEqual(code, 0)
+        self.assertIn("separate lines: Verse", out)
+
+    def test_new_layout_has_no_layout_warning(self):
+        _, out = run(build(lyrics="[Verse]\n[[Bass leads.]]\nHold on\nHold on"))
+        self.assertNotIn("separate lines", out)
+
+    def test_long_line_warns(self):
+        long = "word " * 16
+        code, out = run(build(lyrics=f"[Verse]\n[[x]]\n{long}\nHold on\nHold on"))
+        self.assertEqual(code, 0)
+        self.assertIn("over 70 chars", out)
+
+    def test_long_direction_warns(self):
+        code, out = run(build(lyrics="[Verse]\n[[" + "a" * 301 + "]]\nHold on\nHold on"))
+        self.assertEqual(code, 0)
+        self.assertIn("[[direction]] over 300", out)
+
+    def test_no_repeated_line_warns(self):
+        _, out = run(build(lyrics="[Verse]\n[[x]]\nOne line\nAnother line"))
+        self.assertIn("no sung line repeats", out)
+
+    def test_portuguese_banned_word(self):
+        code, out = run(build(lyrics="[Verso]\n[[x]]\nUm sussurro na porta\nNa porta"))
+        self.assertEqual(code, 1)
+        self.assertIn("sussurro", out)
+
+    def test_labels_on_their_own_line(self):
+        prompt = ("TITLE: T\n\nLYRICS:\n\n[Verse]\n[[x]]\nHold on\nHold on\n\n"
+                  "STYLE:\n90 BPM, A minor. Pop.\n\nEXCLUDE:\n" + CROWD + "\n")
+        code, out = run(prompt)
+        self.assertEqual(code, 0, out)
+        self.assertIn("STYLE 21/1,000", out)
 
     def test_missing_field(self):
         code, out = run("TITLE: T\nLYRICS:\n[Verse] [[x]] la\n")

@@ -2,38 +2,102 @@ TITLE: LEAVE LATE
 
 LYRICS:
 
-[Instrumental Lead-In] [[Two bars of deep, gritty electric bass riff and tight drums. Bent guitar notes answer the bass. No ambient intro.]]
+[Instrumental Lead-In]
+[[Two bars of deep, gritty electric bass riff and tight drums. Bent guitar notes answer the bass. No ambient intro.]]
 
-[Verse 1] [[Close, dry, raspy vocal. Bass leads; sparse muted guitar, loose half-time pocket.]] Dad kept the engine running while I packed. One bag, two shirts, a speaker in the back. He asked me if I'd checked the oil. I said, “I'm not a kid.” He stood there with a coffee like he hadn't heard a thing.
+[Verse 1]
+[[Close raspy vocal. Bass leads; sparse muted guitar, loose half-time pocket.]]
+Dad kept the engine running while I packed.
+One bag, two shirts, a speaker in the back.
+He asked me if I'd checked the oil.
+I said, "I'm not a kid."
 
-I took the corner faster than I should. Thought getting out would fix me up for good. For months I kept my hometown out of every conversation. Like saying where I came from would undo the reservation.
+I took the corner faster than I should.
+Thought getting out would fix me up for good.
+For months I kept my hometown
+out of every conversation.
 
-[Turn] [[Guitar opens slightly. Keep the low bass full and exposed. Vocal rises without shouting.]] I had somewhere else to be. I made sure everybody knew. Now somebody asks about that place and I talk all afternoon.
+[Turn]
+[[Guitar opens slightly. Keep the low bass full and exposed. Vocal rises without shouting.]]
+I had somewhere else to be.
+I made sure everybody knew.
+Now somebody asks about that place
+and I talk all afternoon.
 
-[Chorus] [[Wide distorted guitars, open drums, huge melodic hook. Deep bass remains prominent beneath the guitars. Raw vocal rasp on sustained notes.]] I used to count the days till I could leave. Now I take the long way down our street. Same old houses, different kind of ache. I used to leave early. Now I leave late.
+[Chorus]
+[[Wide distorted guitars, open drums, huge melodic hook. Deep bass stays prominent under the guitars. Raw rasp on sustained notes.]]
+I used to count the days till I could leave.
+Now I take the long way down our street.
+Same old houses, different kind of ache.
+I used to leave early.
+Now I leave late.
 
-Give me five more minutes at the gate. Nothing much to say, but that's okay. Funny how a place can stay the same. I used to leave early. Now I leave late. (Leave late.)
+Give me five more minutes at the gate.
+Nothing much to say, but that's okay.
+Funny how a place can stay the same.
+I used to leave early.
+Now I leave late.
+(Leave late.)
 
-[Verse 2] [[Return to bass-led groove immediately. Syncopated vocal; restrained guitar scratches.]] Last Sunday I came home to get a box. My brother's room is full of things we lost. A photograph of both of us with hair we thought looked good. I sent it. He called laughing. We talked longer than we would.
+[Verse 2]
+[[Back to the bass-led groove at once. Syncopated vocal; restrained guitar scratches.]]
+Last Sunday I came home to get a box.
+My brother's room is full of things we lost.
+A photo of us both with hair we thought looked good.
+I sent it. He called laughing.
 
-Dad turned the TV down to hear me speak. I asked him what he'd done throughout the week. He told me he'd replaced the fence. I went outside to see. We used to fight about my plans. He saved some paint for me.
+Dad turned the TV down to hear me speak.
+I asked him what he'd done throughout the week.
+We used to fight about my plans.
+He saved some paint for me.
 
-[Short Chorus] [[Enter early; driving bass variation, compact full-band impact.]] I used to count the days till I could leave. Now I take the long way down our street. Same old houses, different kind of ache. I used to leave early. Now I leave late.
+[Short Chorus]
+[[Enter early; driving bass variation, compact full-band impact.]]
+I used to count the days till I could leave.
+Now I take the long way down our street.
+Same old houses, different kind of ache.
+I used to leave early.
+Now I leave late.
 
-[Instrumental Break] [[Deep overdriven bass carries the hook. Abrasive, singable guitar bends; live drum fills. No metal breakdown.]]
+[Instrumental Break]
+[[Overdriven bass carries the hook. Singable guitar bends, live drum fills. No metal breakdown.]]
 
-[Bridge] [[Pull back to bass and one uneasy clean guitar. Nearly spoken vocal builds into strained melody.]] I don't want my old room back. I like the life I've made. I just don't need to hate this town to know I got away.
+[Bridge]
+[[Pull back to bass and one uneasy clean guitar. Nearly spoken vocal builds into strained melody.]]
+I don't want my old room back.
+I like the life I've made.
+I just don't need to hate this town
+to know I got away.
 
-He asks me if I've checked the oil. I almost say the line. Then hand him my keys. “Have a look. I've got time.”
+He asks me if I've checked the oil.
+I almost say the line.
+Then I hand him my keys.
+"Have a look. I've got time."
 
-[Final Chorus] [[Brief stop, then full band. Biggest open melody, gritty guitars, chest-deep bass clearly audible. Restrained backing harmony only on final lines.]] I used to count the days till I could leave. Now I take the long way down our street. Same old houses, different kind of ache. I used to leave early. Now I leave late.
+[Final Chorus]
+[[Brief stop, then full band. Biggest open melody, gritty guitars, chest-deep bass clearly audible. Light harmony on the last lines only.]]
+I used to count the days till I could leave.
+Now I take the long way down our street.
+Same old houses, different kind of ache.
+I used to leave early.
+Now I leave late.
 
-Give me five more minutes at the gate. Nothing much to say, but that's okay. Funny how a place can stay the same. I used to leave early. Now I leave late. (I leave late.)
+Give me five more minutes at the gate.
+Nothing much to say, but that's okay.
+Funny how a place can stay the same.
+I used to leave early.
+Now I leave late.
+(I leave late.)
 
-[Outro] [[Guitars cut out. Bass riff and dry drums continue; intimate vocal, abrupt ending.]] Put the kettle on. The traffic's bad. That's what I tell him when he takes my jacket back.
+[Outro]
+[[Guitars cut out. Bass riff and drums continue; intimate vocal, abrupt ending.]]
+I used to leave early.
+Now I leave late.
 
-STYLE: 92 BPM, F# minor, half-time verses. Modern dark alternative rock with an R&B rhythmic pocket, mainstream emo/post-hardcore hooks and abrasive grunge guitar phrasing. DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT: thick low fundamentals, gritty midrange definition, syncopated melodic riff, loud and clearly audible throughout, including choruses. Bass and kick occupy distinct spaces. Raspy male tenor: intimate conversational verses, cracked melodic belts in choruses, human breaths and imperfect edges. Tight dry acoustic drums, muted verse guitars, wide distorted chorus guitars, bent-note instrumental break. Immediate groove intro; expansive singable chorus; stripped bridge; brief stop before final chorus; bass-led abrupt outro. Modern punch, organic rock performance, dark but warm.
+[[Hard stop.]]
 
-EXCLUDE: crowd noise, audience, applause, crowd chants, no crowd, live venue ambience, glossy pop vocals, robotic tuning, generic metalcore breakdowns, nonstop screaming, EDM drops, trap hi-hats, buried bass, fade-out.
+STYLE:
+92 BPM, F# minor, half-time verses. Dark alternative rock with an R&B rhythmic pocket and emo/post-hardcore hooks. DEEP ELECTRIC BASS IS THE LEAD INSTRUMENT: thick low end, gritty midrange, syncopated melodic riff, clearly audible in every chorus. Bass and kick in distinct spaces. One raspy male tenor: conversational verses, cracked melodic chorus belts. Tight acoustic drums, muted verse guitars, wide distorted chorus guitars, bent-note instrumental break. Immediate groove intro, huge singable chorus, stripped bridge, brief stop before final chorus, bass-led abrupt outro. Organic rock performance, natural room.
 
-Characters — LYRICS 3,289/5,000 · STYLE 786/1,000 · EXCLUDE 209/1,000 · STYLE+EXCLUDE 995/1,000
+EXCLUDE:
+crowd noise, audience, applause, crowd chants, no crowd, live venue ambience, glossy pop vocals, robotic tuning, generic metalcore breakdowns, nonstop screaming, EDM drops, trap hi-hats, buried bass, fade-out.

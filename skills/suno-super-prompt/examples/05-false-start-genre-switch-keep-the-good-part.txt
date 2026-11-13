@@ -1,0 +1,115 @@
+TITLE: KEEP THE GOOD PART
+
+LYRICS:
+
+[False Start — Instrumental]
+[[156 BPM. Four bars of bright bubblegum synth-pop in A major: glossy plucked SYNTH, playful ascending melody, programmed handclaps and a light electronic kick. Cheerful, polished, almost sugary. No vocals, no guitar, no bass instruments.]]
+
+[Violent Switch]
+[[Cut the pop arrangement dead. Immediately transform its melody into an A-minor drop-A guitar riff: fast low-string attacks, descending octave answer, a full-band stop. Hard acoustic snare, driving double kick. Eight instrumental bars. No acoustic guitar.]]
+
+[Verse 1]
+[[One raspy male rock tenor, sharp chest-led singing over a relentless syncopated riff. Dry vocal, tightly articulated words.]]
+You picked the picture where I'm laughing.
+Cut the argument out of frame.
+Everybody says we looked so happy.
+I know exactly what you'd say.
+
+You tell them I was hard to reach.
+You leave out what I answered.
+A sentence sounds so different
+when you stop it where you want to.
+
+You liked the way I held you
+when somebody else could see.
+You pulled away so quickly
+when it came to holding me.
+
+[Chorus]
+[[Huge melodic hook over heavy open chords. Strong repeated rhythm on KEEP THE GOOD PART. High raspy belts, concise male doubles; dark synth answers between phrases.]]
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
+
+Let them wish they could have been us.
+Let them think you did your best.
+You can keep the good part.
+I was there for all the rest.
+
+[Riff Return]
+[[Four instrumental bars. Opening pop melody returns as a vicious distorted guitar hook. Fast kick pattern, hard snare, one abrupt stop.]]
+
+[Verse 2]
+[[Guitar riff becomes more spacious and percussive. Vocal remains sung with rough rhythmic bite. Short industrial synth accents interrupt the gaps.]]
+I met a friend who knows you better
+than he ever got to know me.
+He said you never saw it coming.
+I let him finish his story.
+
+Apparently I never listened.
+Apparently you begged me to.
+I almost asked him for the ending.
+I wanted to hear that version too.
+
+I used to help you tell it.
+I'd laugh and let you get it wrong.
+If someone asked about the details,
+I'd find a way to move it on.
+
+[Half-Chorus]
+[[Drums pull back to half-time. Heavy sustained guitars, narrow synth chord. Lower sung melody, increasingly strained.]]
+You can keep the good part.
+I was there for all the rest.
+I kept making you look better.
+I thought that made the damage less.
+
+[Instrumental Collision]
+[[Six bars. Bright intro synth returns against the heavy riff. Keep both motifs clearly audible; cheerful synth becomes unsettling through the minor harmony. Lead guitar adds a short melodic variation, then drums cut.]]
+
+[Bridge]
+[[One exposed raspy male voice over short processed guitar notes. No strumming or fingerpicking.]]
+There is a picture I still like.
+You weren't looking at the camera.
+I had said something stupid.
+You couldn't stop yourself from laughing.
+
+I don't have to call that fake.
+I don't have to make you worse.
+You could love me in that picture
+and still hurt me when we left.
+
+[Breakdown]
+[[One beat of silence. Crushing drop-A riff in half-time: three low attacks, long rest, bent octave answer. Huge snare, double-kick flurries. No bass instruments. First line sung low; final lines screamed clearly.]]
+I was there.
+
+I WAS THERE WHEN NO ONE WATCHED.
+
+PUT THAT IN YOUR STORY.
+
+[[Four instrumental bars. Breakdown accelerates into the opening riff at full speed.]]
+
+[Final Chorus]
+[[Largest melodic release. Driving metal drums, wide heavy guitars and dark synth counterline. Raw chest-led high belts. Preserve the chorus melody exactly.]]
+You can keep the good part.
+I was there for all the rest.
+You can tell them that you loved me.
+You can leave out what came next.
+
+Let them wish they could have been us.
+Let them think you did your best.
+You can keep the good part.
+I was there for all the rest.
+
+[Ending]
+[[Two bars of the sugary intro synth alone. Abruptly interrupt it with one full-band guitar attack.]]
+You looked so happy.
+I helped you look like that.
+
+[[Hard stop.]]
+
+STYLE:
+156 BPM. Four-bar bubblegum synth-pop fakeout in A major: glossy plucked SYNTH, sweet ascending hook, programmed handclaps, light kick. Abrupt cut into A minor, seven-string drop-A metal. Transform the SAME pop motif into a memorable heavy guitar riff. Dark electronic nu metal, thrash attack, melodic post-hardcore choruses. Fast low-string picking, octave answers, hard stops, driving acoustic drums, precise double kick. One bright raspy male rock tenor: rhythmic sung verses, cracked high chorus belts, brief breakdown screams. Huge singable hook. Six-bar synth/guitar collision, exposed bridge, crushing half-time breakdown, full-speed final chorus. No bass instruments. End with two bars of sweet synth interrupted by a heavy hit.
+
+EXCLUDE:
+crowd noise, audience, applause, crowd chants, no crowd, acoustic guitar, fingerpicking, strummed intro, electric bass, synth bass, female vocals, rap, choir, country, melisma, robotic tuning, constant screaming, EDM drops, fade-out.

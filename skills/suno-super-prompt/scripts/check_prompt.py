@@ -44,6 +44,9 @@ BANNED = [
     "resonate", "cascade", "kaleidoscope",
     "soul on fire", "storm inside", "rise from the ashes", "in the dark", "through the night",
     "fading light", "city lights", "burning bright",
+    # Portuguese AI-core (for lyrics written in Portuguese)
+    "sussurro", "sussurros", "eternidade", "infinito", "horizonte", "abismo", "labirinto",
+    "sinfonia", "tapeçaria", "etéreo", "celestial", "alma em chamas", "luzes da cidade",
 ]
 # AVOID warns: fine when literal, AI-core when used as metaphor or stock setting.
 AVOID = [
@@ -52,6 +55,9 @@ AVOID = [
 ]
 
 LABELS = ("TITLE", "LYRICS", "STYLE", "EXCLUDE")
+
+LONG_LINE = 70        # sung line longer than this is probably two lines
+LONG_DIRECTION = 300  # [[direction]] longer than this should be cut down
 
 
 def parse(text):
@@ -70,6 +76,38 @@ def sung_text(lyrics):
     """Lyrics without [[directions]] and [section] tags."""
     no_dirs = re.sub(r"\[\[.*?\]\]", " ", lyrics, flags=re.DOTALL)
     return re.sub(r"\[[^\[\]]*\]", " ", no_dirs)
+
+
+def lyric_layout(lyrics):
+    """Warnings for lyrics that are not one sung phrase per line."""
+    out = []
+    inline, long_lines, long_dirs = [], [], []
+    for line in lyrics.splitlines():
+        s = line.strip()
+        if not s:
+            continue
+        m = re.match(r"^\[([^\[\]]+)\](?!\])\s*(\S.*)?$", s)
+        if m and m.group(2):
+            inline.append(m.group(1))
+        for d in re.findall(r"\[\[(.*?)\]\]", s):
+            if len(d) > LONG_DIRECTION:
+                long_dirs.append(d[:30] + "…")
+        sung = re.sub(r"\[\[.*?\]\]|\[[^\[\]]*\]", "", s).strip()
+        if len(sung) > LONG_LINE:
+            long_lines.append(sung[:40] + "…")
+    if inline:
+        out.append("put each [Section], its [[direction]] and the lyrics on separate lines: "
+                   + ", ".join(inline))
+    if long_lines:
+        out.append(f"{len(long_lines)} sung line(s) over {LONG_LINE} chars; break them where "
+                   "the singer breathes: " + " | ".join(long_lines[:3]))
+    if long_dirs:
+        out.append(f"[[direction]] over {LONG_DIRECTION} chars; keep it to 1-3 short sentences: "
+                   + " | ".join(long_dirs[:3]))
+    sung_lines = [l.strip().lower() for l in sung_text(lyrics).splitlines() if l.strip()]
+    if sung_lines and max(sung_lines.count(l) for l in sung_lines) < 2:
+        out.append("no sung line repeats; give the chorus a hook line that comes back")
+    return out
 
 
 def main():
@@ -143,6 +181,9 @@ def main():
     bare = [name for name, has_dir in sections if not has_dir]
     if bare:
         warnings.append("sections without a [[direction]]: " + ", ".join(bare))
+
+    layout = lyric_layout(lyrics)
+    warnings.extend(layout)
 
     if "fade-out" not in excl_lower and "fade out" not in excl_lower:
         warnings.append("'fade-out' not excluded (fine only if a fade is intended)")

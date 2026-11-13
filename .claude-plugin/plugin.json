@@ -1,6 +1,6 @@
 {
   "name": "suno-super-prompt",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Write Suno SUPER PROMPTS (title, lyrics with [sections] and [[directions]], style, exclude) that sound like a real band, not AI.",
   "author": { "name": "Jason Mello", "url": "https://github.com/jasonmello" },
   "homepage": "https://github.com/jasonmello/suno-super-prompt",

@@ -10,6 +10,10 @@ neon, static, velvet, echo, echoes, shadow, shadows, ember, embers, ashes, spark
 
 Phrases: "soul on fire", "storm inside", "rise from the ashes", "in the dark", "through the night", "fading light", "city lights", "burning bright".
 
+### Portuguese (lyrics in Portuguese)
+
+sussurro(s), eternidade, infinito, horizonte, abismo, labirinto, sinfonia, tapeçaria, etéreo, celestial, "alma em chamas", "luzes da cidade". Same idea as the English list: stock "poetic" words no real songwriter in the genre would use.
+
 ### Avoid — allowed only when literal, never as metaphor or stock setting
 
 ghost(s), crown, chains, cage, wings, flames, electric, heartbeat, pulse, midnight, 3 a.m., kitchen, television, empty streets.
@@ -19,6 +23,18 @@ ghost(s), crown, chains, cage, wings, flames, electric, heartbeat, pulse, midnig
 ### Project-specific bans
 
 The user can extend the list mid-conversation ("no kitchen, television, beneath"; "no days or hours in the lyric"). Treat those as banned for the rest of the project, and pass them to the validator with `--ban`.
+
+## Repetition over narration
+
+The fastest way to sound like an AI songwriter is a lyric that tells a complete short story in tidy, detailed sentences. Real songs repeat.
+
+- **One hook line** that opens and/or closes the chorus and comes back at least 4–6 times in the song (chorus × 3 + outro or post-chorus).
+- **The chorus repeats word for word.** Only the final chorus changes one or two lines.
+- **Parallel lines**: the same opening words or rhythm across two or four lines (`You can keep the good part. / You can tell them that you loved me. / You can leave out what came next.`).
+- **Verses set a scene, they don't narrate a plot.** Two or three concrete images per verse are enough; leave gaps the listener fills in.
+- **Post-chorus or outro**: a fragment of the hook, repeated (`Next week, next week.`).
+- **Simple words.** If a line needs to be read twice to be understood, it won't be sung well.
+- At most one or two quoted lines of dialogue per song.
 
 ## What to write instead: concrete, filmable moments
 
@@ -31,7 +47,7 @@ The user can extend the list mid-conversation ("no kitchen, television, beneath"
 Techniques:
 
 - **Objects carry emotion.** A jacket left on a chair, the oil the dad always checks, a cheap guitar cable that has to be bent to work, a photo where he's in the frame.
-- **Dialogue in quotes.** Short, plain, overheard: `He asked me if I'd checked the oil. I said, "I'm not a kid."`
+- **A line of dialogue, sparingly.** Short, plain, overheard: `He asked me if I'd checked the oil. / I said, "I'm not a kid."` One per song is usually plenty.
 - **The same gesture changes meaning.** Verse 1: he refuses the oil check. Bridge: he hands over the keys — `"Have a look. I've got time."`
 - **Small admissions beat big declarations.** `I said, "Yeah, just busy." You said, "You said that last time."`
 - **Outro callback.** End on an object or line from verse 1.
@@ -40,7 +56,7 @@ Techniques:
 
 ## Choruses
 
-- Natural phrase length — not telegram-short, not run-on. The sweet spot is the classic 2000s emo chorus: 6–10 syllables per line, 4–8 lines.
+- Natural phrase length — not telegram-short, not run-on. The sweet spot: 5–9 syllables per line, 4–8 lines.
 - One **title line** repeated at least twice, ideally opening and closing the chorus.
 - **Repeated melodic anchors**: same rhythm for parallel lines (`I used to leave early. Now I leave late.`).
 - **Open vowels** on held words (late, away, home, me, go).
@@ -54,7 +70,7 @@ The user corrected both extremes in practice:
 - "Lines are too long" → cut each line to one breath, split long sentences into two lines.
 - "Lines are too short" → back to medium phrases with a full thought each.
 
-Default to **medium**: one full clause per line, 6–12 syllables in verses.
+Default to **one sung phrase per line**: 5–10 syllables, one clause, broken where the singer breathes. Stanzas of 2–4 lines. A verse is never a paragraph. See `super-prompt-format.md` → Layout.
 
 ## Rhyme
 

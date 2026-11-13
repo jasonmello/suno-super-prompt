@@ -18,10 +18,12 @@ Each fix touches three places: STYLE, the section [[directions]], and EXCLUDE.
 | Too much screaming | `one brief pitched scream` | UPPERCASE only on that one line | `nonstop screaming` |
 | Theme turned into sound effects (guns, heart monitor, moans) | — | — | theme SFX block (`exclude-library.md`) |
 | Fades out | `abrupt stop / hard ending` | `[[Hard stop.]]` at the end | `fade-out` |
-| Crowd / applause in a studio track | `Dry close recording` / `studio` | `no audience` in intimate sections | base crowd block + `live ambience` |
-| Lyrics "sound like AI" | — | Rewrite with concrete objects, dialogue, banned-word sweep | `generic AI wording` (cosmetic) |
+| Crowd / applause in a studio track | `Studio recording, close-mic` | `no audience` in intimate sections | base crowd block + `live ambience` |
+| Lyrics "sound like AI" | — | Less narration, more repetition: one hook line repeated, chorus word for word, 2–3 images per verse; banned-word sweep | `generic AI wording` (cosmetic) |
+| Vocal sounds rushed, recited or robotic | Leaner STYLE (500–750 chars), no "dry vocal" | One sung phrase per line, stanzas of 2–4 lines, shorter [[directions]] on their own line | `robotic tuning, autotune` |
+| Sounds generic / averaged | Cut STYLE to 2–3 genres and the essentials; remove adjective stacks | Directions say what plays, not how it feels | guard the genre Suno drifts toward |
 | Rhymes not harmonious | — | Rewrite with slant rhymes, natural word order; read aloud | `forced rhymes` |
-| Lines too long | — | One breath per line; split sentences | `long lyric lines` |
+| Lines too long | — | One sung phrase per line; split sentences | `long lyric lines` |
 | Lines too short | — | Medium lines, one full clause each | `very short lyric lines` |
 | Not sentimental enough | Slower, intimate clean intro, simple direct heartbreak lyrics | Fewer images, plainer words, a quiet admission in the bridge | `flashy guitar solos, big arena production` |
 | Chorus not catchy | Name the hook in caps; same melodic contour for parallel lines; open vowels | Leave space after the hook word | `excessive vocal runs` |

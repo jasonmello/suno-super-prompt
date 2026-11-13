@@ -1,6 +1,6 @@
 # STYLE engineering
 
-STYLE is a dense production brief, not a tag soup. Full sentences and semicolons beat comma lists of adjectives: early tests with comma-tag lists ("anthemic pop-punk, emotional, cinematic, radio-ready…") produced generic results; dense technical sentences gave far more control.
+STYLE is a lean production brief, not a tag soup and not an essay. Short, terse fragments of technical information beat comma lists of adjectives ("anthemic, emotional, cinematic, radio-ready…" gives generic results) and also beat long prose: when STYLE is crowded, Suno averages the instructions and the song comes out generic. Aim for 500–750 characters, 2–3 genres at most, and cut every adjective that doesn't change the sound. Pick the starting point from `genre-playbook.md`.
 
 ## Order of information
 
@@ -15,7 +15,7 @@ Write it in this order so the most important facts come first:
 7. **Hook instruction** — name the hook in caps and say how it should be sung.
 8. **Arrangement map** — first chorus vs later choruses, solo length, bridge, breakdown, final chorus.
 9. **Ending** — `abrupt stop`, `hard cut`, `natural acoustic-string decay`.
-10. **Production feel** — `Modern punch, human vocal edges.` / `Dry close recording.`
+10. **Production feel** (optional, a few words) — `Organic performance, natural room.` / `Polished, warm, groove-first.` Don't default to "dry": a fully dry vocal exposes generation artifacts.
 
 Optional: target duration (`approximately 3:30`) — tends to keep the arrangement compact.
 
@@ -58,7 +58,7 @@ Say it's absent, say what replaces its job, and exclude every synonym.
 
 When the user wants an R&B (or funk, trap…) *groove* but a rock *voice*, split the two explicitly — otherwise Suno turns the singer into a crooner.
 
-- STYLE: `R&B INSTRUMENTAL GROOVE ONLY: swung sixteenths, syncopated deep electric bass, dry pocket drums. VOCALS STRICTLY ROCK: raspy male tenor, chest-led tone, clear consonants, huge gritty chorus belts. Restrained verses remain firm, never crooned.`
+- STYLE: `R&B INSTRUMENTAL GROOVE ONLY: swung sixteenths, syncopated deep electric bass, tight pocket drums. VOCALS STRICTLY ROCK: raspy male tenor, chest-led tone, clear consonants, huge gritty chorus belts. Restrained verses remain firm, never crooned.`
 - EXCLUDE: `R&B vocals, soul vocals, melisma, vocal runs, crooning, breathy falsetto, gospel ad-libs`.
 
 ## Intro control

@@ -14,7 +14,7 @@ Why this matters for the user, not only as a rule:
 ## 1. Generate for release quality
 
 Add to STYLE when the take is meant for release:
-`Clean transients, natural cymbal decay, intelligible lyrics, dry upfront lead vocal, uncluttered arrangement.`
+`Clean transients, natural cymbal decay, intelligible lyrics, upfront lead vocal with natural room, uncluttered arrangement.`
 
 Add to EXCLUDE (pick what fits the budget):
 `lo-fi artifacts, metallic shimmer, phasey vocals, warbly pitch, smeared cymbals, muddy low end`

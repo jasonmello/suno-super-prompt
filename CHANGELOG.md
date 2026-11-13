@@ -4,6 +4,27 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-11-13
+
+Changes after user feedback that some generations sounded more artificial with the skill than without it.
+
+### Added
+
+- Intake conversation: the skill first asks what style of music the user wants to create, then asks only what's missing (references, voice, lyric language, theme, project size) before the first concept.
+- `references/genre-playbook.md`: genre cards (pop, dance-pop, rock, pop-punk, metal, hip-hop, R&B, electronic, country, folk, ballad, reggaeton, sertanejo, funk, pagode, MPB, worship, K-pop, lo-fi) with BPM, STYLE core, voice, sections, guards and pitfalls.
+- "Repetition over narration" rules in `lyric-craft.md` and a Portuguese AI-core word list.
+- English starter prompt (`prompts/starter-prompt.md`) replaces the Portuguese one, so the project ships in English for a global audience.
+- Example 05 (genre-switch false start, the reference model for the layout) and example 06 (dance-pop, female lead).
+- Validator warnings for lyrics on the section-tag line, sung lines over 70 characters, `[[directions]]` over 300 characters and lyrics where no line repeats; Portuguese banned words.
+
+### Changed
+
+- New lyric layout: `[Section]`, its `[[direction]]` and the lyrics on separate lines, one sung phrase per line, stanzas of 2–4 lines; `STYLE:` and `EXCLUDE:` content below the label. Prose-paragraph verses are no longer allowed: Suno phrases by line breaks and run-on lines come out rushed and robotic.
+- Leaner STYLE: target 500–750 characters, 2–3 genres, terse fragments; EXCLUDE 200–250.
+- Shorter `[[directions]]`: 1–3 short sentences.
+- "Dry" is no longer a default for vocals or recordings (it exposes generation artifacts); acoustic lock and release add-ons use close-mic with a natural room.
+- Examples 01–04 converted to the new layout, with trimmed STYLE and directions.
+
 ## [1.2.0] - 2026-11-13
 
 ### Changed
@@ -47,7 +68,8 @@ Improvements from a blind test: a fresh Claude instance used only the skill fold
 - Four worked examples, Portuguese starter prompt for other chat assistants, Claude Code plugin and marketplace manifests.
 - Test suite, CI, issue and pull request templates.
 
-[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jasonmello/suno-super-prompt/releases/tag/v1.0.0

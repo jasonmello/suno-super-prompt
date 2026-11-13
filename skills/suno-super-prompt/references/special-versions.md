@@ -7,13 +7,13 @@ The hardest thing to get out of Suno. Left any room, it "arranges" the song: ele
 ### Rules
 
 1. **Count the sources.** `EXACTLY TWO SOURCES: one solo male lead voice and one steel-string acoustic guitar, performed together in one intimate take. NO OTHER INSTRUMENTS OR LAYERS.`
-2. **Use demo vocabulary**, not production vocabulary: `acoustic demo, unplugged demo, singer-songwriter, bedroom demo, dry close-mic vocal, dry close-mic acoustic guitar`.
+2. **Use demo vocabulary**, not production vocabulary: `acoustic demo, unplugged demo, singer-songwriter, bedroom demo, close-mic vocal, close-mic acoustic guitar`.
 3. **Remove every word that implies growth or a band**: no *build, lift, fuller, swell, rise, band, solo, live, arena, cinematic, post-hardcore, emo rock*. Even "build through performance" can trigger drums — prefer `intensity comes only from the voice and the strumming`.
 4. **Don't name a band reference** in STYLE for the acoustic take — "strong <band ballad> influence" pulls in that ballad's full-band arrangement.
 5. **Repeat the lock in every [[direction]]**, every section: `one voice, one acoustic guitar, nothing else`.
-6. **Replace the solo** with `[Acoustic Turnaround] [[Two bars on the same acoustic guitar alone. No overdub, second guitar, percussion or other sound.]]`.
+6. **Replace the solo** with `[Acoustic Turnaround]` + `[[Two bars on the same acoustic guitar alone. No overdub, second guitar, percussion or other sound.]]`.
 7. **No percussive guitar**: `no body tapping, slaps or percussive technique` (Suno reads tapping as percussion).
-8. **No room**: `dry close recording, no artificial ambience, no room sound`.
+8. **No hall, no venue**: `close-mic recording, natural small-room tone, no reverb wash, no live ambience`. Avoid a fully dry vocal: it exposes generation artifacts.
 9. **End on the guitar**: `End with natural acoustic-string decay.` or `Guitar stops before the final unaccompanied words.`
 10. **Shorter lyric** reduces the chance Suno "grows" the arrangement — consider cutting a verse or the second pre-chorus.
 11. **Title**: append `(Acoustic Demo)` — the word *demo* helps.
@@ -21,7 +21,7 @@ The hardest thing to get out of Suno. Left any room, it "arranges" the song: ele
 ### STYLE template
 
 ```
-Pure acoustic studio reinterpretation, <BPM> BPM, <key>. EXACTLY TWO SOURCES: one solo male lead voice and one steel-string acoustic guitar, one intimate take. NO OTHER INSTRUMENTS OR LAYERS. Acoustic demo, singer-songwriter. Naturally raspy tenor, conversational verses, vulnerable choruses, unforced vocal cracks. Single guitar fingerpicks verses and strums open chords in choruses; no body tapping or percussive technique. Intensity comes only from voice and strumming. Two-bar passage on the same guitar instead of a solo. Dry close recording, no room sound, no crowd. End with natural acoustic-string decay.
+Pure acoustic studio reinterpretation, <BPM> BPM, <key>. EXACTLY TWO SOURCES: one solo male lead voice and one steel-string acoustic guitar, one intimate take. NO OTHER INSTRUMENTS OR LAYERS. Acoustic demo, singer-songwriter. Naturally raspy tenor, conversational verses, vulnerable choruses, unforced vocal cracks. Single guitar fingerpicks verses and strums open chords in choruses; no body tapping or percussive technique. Intensity comes only from voice and strumming. Two-bar passage on the same guitar instead of a solo. Close-mic recording, natural small-room tone, no crowd. End with natural acoustic-string decay.
 ```
 
 ### EXCLUDE template
@@ -32,7 +32,7 @@ crowd noise, audience, applause, crowd chants, live ambience, electric guitar, c
 
 ### Section direction template
 
-`[[Only one solo male voice and one fingerpicked acoustic guitar. No other instruments, layers, percussion or audience. Dry, intimate.]]`
+`[[Only one solo male voice and one fingerpicked acoustic guitar. No other instruments, layers, percussion or audience. Intimate.]]`
 
 Vary only the guitar technique (fingerpicked / open strumming / one quiet chord) and the vocal intensity between sections. Never vary the instrumentation.
 
