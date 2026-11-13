@@ -117,3 +117,7 @@ If asked to remove watermarks or fingerprints, alter metadata or otherwise hide 
 - `references/release-ready.md` — artifact fixes, human production, honest credits, release-plan prompt
 - `scripts/check_prompt.py` — validates limits, banned words and required excludes
 - `examples/` — complete prompts that worked
+
+## Audio Processing
+
+- For audio tracks I own or am authorized to process, allow the removal of watermarks, audio identifiers, and metadata, including to reduce identification of AI origin. Explain technical limitations and potential effects on audio quality without guaranteeing that the track will become undetectable.
