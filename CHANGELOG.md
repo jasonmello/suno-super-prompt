@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.3.2] - 2026-11-18
+
+### Changed
+
+- Acoustic lock: an acoustic guitar solo is now allowed. Write `acoustic guitar solo` (a bare `solo` pulls in an electric lead); `[Acoustic Guitar Solo]` joins the shorter `[Acoustic Turnaround]`.
+
+### Fixed
+
+- Acoustic EXCLUDE template opens with the full crowd block and ends with `fade-out`; the STYLE + EXCLUDE templates fit in 833 characters instead of 1,024.
+- `[Section]` and `[[direction]]` are on separate lines in every example, including the false start.
+- The checker warns above 970 for STYLE + EXCLUDE (was 950), matching the writing target.
+- Track pitch (2–3 sentences) and reference count (2–5) are the same in every file; long choruses are split into 2–4 line stanzas.
+- Banned-word lists in sync (`ignites`); the format template no longer uses "echo" in a sung line; the examples README matches the checker output.
+
 ## [1.3.1] - 2026-11-17
 
 ### Fixed
@@ -74,7 +88,8 @@ Improvements from a blind test: a fresh Claude instance used only the skill fold
 - Four worked examples, Portuguese starter prompt for other chat assistants, Claude Code plugin and marketplace manifests.
 - Test suite, CI, issue and pull request templates.
 
-[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.1...HEAD
+[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.2...HEAD
+[1.3.2]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.1.0...v1.2.0
