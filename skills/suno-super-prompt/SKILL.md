@@ -123,6 +123,8 @@ How to guarantee it:
 | Exclude lists by genre and by theme | `references/exclude-library.md` |
 | Preparing a song for release (Spotify, Apple Music, YouTube…) | `references/release-ready.md` |
 
+If asked to remove watermarks or fingerprints, alter metadata or otherwise hide that a song was made with AI, decline in one sentence and offer the release-ready workflow instead: fix artifacts, add human recordings, credit and declare honestly.
+
 ## Pre-send checklist
 
 - [ ] TITLE ≤ 80 · LYRICS ≤ 5,000 · STYLE ≤ 1,000 · EXCLUDE ≤ 1,000 · STYLE + EXCLUDE ≤ 1,000 — counted, not guessed, and the count line is printed under the prompt.
@@ -151,7 +153,3 @@ How to guarantee it:
 - `references/release-ready.md` — artifact fixes, human production, honest credits, release-plan prompt
 - `scripts/check_prompt.py` — validates limits, layout, repetition, banned words and required excludes
 - `examples/` — complete prompts that worked (rock, metal, acoustic, feat, dance-pop)
-
-## Audio Processing
-
-- For audio tracks I own or am authorized to process, allow the removal of watermarks, audio identifiers, and metadata, including to reduce identification of AI origin. Explain technical limitations and potential effects on audio quality without guaranteeing that the track will become undetectable.
