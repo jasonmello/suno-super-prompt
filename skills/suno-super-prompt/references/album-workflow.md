@@ -6,7 +6,7 @@ Collected in the intake conversation (`SKILL.md` → Intake), then reused in eve
 
 - Style / genre and mood (load the card in `genre-playbook.md`).
 - Artist or band name and era (debut? 4th album after an emo record, a post-hardcore record and some metalcore singles?).
-- 3–6 references, each with *what* to take from it (vocal grit, riff style, arena hooks, groove).
+- 2–5 references, each with *what* to take from it (vocal grit, riff style, arena hooks, groove).
 - Voice: who sings, register, texture, signature (e.g. "raspy male tenor, punk bite", "warm female pop alto", "Brazilian male duo in thirds").
 - Lyric language (default English) and words the user has banned.
 - Recurring production wishes (bass up front, double kick, drop tuning, no crowd).
@@ -38,7 +38,7 @@ If the user asks for "concept and prompt" in one message, give the concept and t
 
 ## 3. Track pitch (when the user asks "what's next?")
 
-Give: title, 3–4 sentence story, the chorus hook line, BPM + sonic signature, and how it connects to the previous track. Don't write the prompt yet.
+Give: title, story in 2–3 sentences, the chorus hook line, BPM + sonic signature, and how it connects to the previous track. Don't write the prompt yet.
 
 ## 4. One SUPER PROMPT per turn
 

@@ -1,6 +1,6 @@
 # Examples
 
-Prompts in the current layout: `[Section]`, its `[[direction]]` and the lyrics on separate lines, one sung phrase per line. 01–05 come from the projects this skill was built on (band "Bleed Saints"); 06 shows a non-rock genre. All pass `scripts/check_prompt.py`.
+Prompts in the current layout: `[Section]`, its `[[direction]]` and the lyrics on separate lines, one sung phrase per line. 01–05 come from the projects this skill was built on (band "Bleed Saints"); 06 shows a non-rock genre. All pass `scripts/check_prompt.py` with no errors. 03 keeps one expected warning: "midnight" is literal there (it's the title).
 
 | File | Technique it shows |
 |---|---|

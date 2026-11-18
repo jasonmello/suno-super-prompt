@@ -6,12 +6,12 @@ The hardest thing to get out of Suno. Left any room, it "arranges" the song: ele
 
 ### Rules
 
-1. **Count the sources.** `EXACTLY TWO SOURCES: one solo male lead voice and one steel-string acoustic guitar, performed together in one intimate take. NO OTHER INSTRUMENTS OR LAYERS.`
+1. **Count the sources.** `EXACTLY TWO SOURCES: one male lead voice and one steel-string acoustic guitar, performed together in one intimate take. NO OTHER INSTRUMENTS OR LAYERS.`
 2. **Use demo vocabulary**, not production vocabulary: `acoustic demo, unplugged demo, singer-songwriter, bedroom demo, close-mic vocal, close-mic acoustic guitar`.
-3. **Remove every word that implies growth or a band**: no *build, lift, fuller, swell, rise, band, solo, live, arena, cinematic, post-hardcore, emo rock*. Even "build through performance" can trigger drums — prefer `intensity comes only from the voice and the strumming`.
+3. **Remove every word that implies growth or a band**: no *build, lift, fuller, swell, rise, band, live, arena, cinematic, post-hardcore, emo rock*. A solo is welcome as long as it stays acoustic: always write `acoustic guitar solo` (never a bare `solo` or `guitar solo`, which pull in an electric lead). Even "build through performance" can trigger drums — prefer `intensity comes only from the voice and the strumming`.
 4. **Don't name a band reference** in STYLE for the acoustic take — "strong <band ballad> influence" pulls in that ballad's full-band arrangement.
 5. **Repeat the lock in every [[direction]]**, every section: `one voice, one acoustic guitar, nothing else`.
-6. **Replace the solo** with `[Acoustic Turnaround]` + `[[Two bars on the same acoustic guitar alone. No overdub, second guitar, percussion or other sound.]]`.
+6. **Keep the solo acoustic**: `[Acoustic Guitar Solo]` + `[[The same acoustic guitar alone, played melodically. No electric guitar, overdub, second guitar or percussion.]]`. For a shorter break, use `[Acoustic Turnaround]` + `[[Two bars on the same acoustic guitar alone. No overdub, second guitar, percussion or other sound.]]`.
 7. **No percussive guitar**: `no body tapping, slaps or percussive technique` (Suno reads tapping as percussion).
 8. **No hall, no venue**: `close-mic recording, natural small-room tone, no reverb wash, no live ambience`. Avoid a fully dry vocal: it exposes generation artifacts.
 9. **End on the guitar**: `End with natural acoustic-string decay.` or `Guitar stops before the final unaccompanied words.`
@@ -21,18 +21,20 @@ The hardest thing to get out of Suno. Left any room, it "arranges" the song: ele
 ### STYLE template
 
 ```
-Pure acoustic studio reinterpretation, <BPM> BPM, <key>. EXACTLY TWO SOURCES: one solo male lead voice and one steel-string acoustic guitar, one intimate take. NO OTHER INSTRUMENTS OR LAYERS. Acoustic demo, singer-songwriter. Naturally raspy tenor, conversational verses, vulnerable choruses, unforced vocal cracks. Single guitar fingerpicks verses and strums open chords in choruses; no body tapping or percussive technique. Intensity comes only from voice and strumming. Two-bar passage on the same guitar instead of a solo. Close-mic recording, natural small-room tone, no crowd. End with natural acoustic-string decay.
+Pure acoustic studio reinterpretation, <BPM> BPM, <key>. EXACTLY TWO SOURCES: one male lead voice and one steel-string acoustic guitar, one intimate take. NO OTHER INSTRUMENTS OR LAYERS. Acoustic demo, singer-songwriter. Naturally raspy tenor, conversational verses, vulnerable choruses, unforced vocal cracks. Single guitar fingerpicks verses and strums open chords in choruses; no body tapping or percussive technique. Intensity comes only from voice and strumming. Any solo is an acoustic guitar solo on the same guitar. Close-mic recording, natural small-room tone. End with natural acoustic-string decay.
 ```
 
 ### EXCLUDE template
 
 ```
-crowd noise, audience, applause, crowd chants, live ambience, electric guitar, clean electric guitar, distorted guitar, lead guitar, second guitar, overdubs, bass, drums, percussion, shaker, tambourine, kick, snare, cymbals, claps, stomps, guitar tapping, piano, strings, synths, pads, loops, backing vocals, harmonies, vocal doubles, choir, reverb wash, delay, swell, riser, full-band build, screaming
+crowd noise, audience, applause, crowd chants, no crowd, live ambience, electric guitar, second guitar, overdubs, bass, drums, percussion, piano, strings, synths, backing vocals, choir, reverb wash, full-band build, fade-out
 ```
 
 ### Section direction template
 
-`[[Only one solo male voice and one fingerpicked acoustic guitar. No other instruments, layers, percussion or audience. Intimate.]]`
+`[[Only one male voice and one fingerpicked acoustic guitar. No other instruments, layers, percussion or audience. Intimate.]]`
+
+Together the two templates come to 833 characters (609 + 224), inside the ≤ 970 target, with the crowd block first and `fade-out` last.
 
 Vary only the guitar technique (fingerpicked / open strumming / one quiet chord) and the vocal intensity between sections. Never vary the instrumentation.
 
@@ -46,8 +48,8 @@ Shorten STYLE to this single line and regenerate:
 Suno often ignores who-sings-what when voices alternate quickly. Make the cast easy to follow:
 
 1. **Long blocks, few switches.** Lead sings everything up to the second chorus; guest takes one whole section; lead returns and finishes alone. Avoid line-by-line trading.
-2. **Label every section with the singer** in UPPERCASE inside the direction: `[Male Vocal] [[SOLO MALE LEAD. No female voice in this section.]]`, `[Female Solo] [[FEMALE GUEST ALONE for this entire section. No male backing vocals.]]`.
-3. **Instrumental gaps between singers**: `[Instrumental Transition] [[Two bars without vocals. Clear separation before the female feature.]]`.
+2. **Label every section with the singer** in UPPERCASE inside the direction: `[Male Vocal]` + `[[SOLO MALE LEAD. No female voice in this section.]]`, `[Female Solo]` + `[[FEMALE GUEST ALONE for this entire section. No male backing vocals.]]`.
+3. **Instrumental gaps between singers**: `[Instrumental Transition]` + `[[Two bars without vocals. Clear separation before the female feature.]]`.
 4. **VOCAL CAST sentence in STYLE**: `VOCAL CAST: one raspy MALE rock lead sings every section except the single labeled FEMALE SOLO. Female guest sings that entire middle section alone. Instrumental breaks separate singers. Male returns after guitar solo and finishes alone. No duet or overlapping singers.`
 5. **Describe each voice so they contrast**: lead `bright raspy male rock tenor, punk bite`; guest `deep resonant gothic male baritone, fully sung low melody, controlled vibrato` or `deep dry baritone rapper, spoken delivery, precise rhythm, no singing`.
 6. **EXCLUDE the mix-ups**: `duet, overlapping singers, alternating voices within sections, mixed backing vocals` — or for rap: `overlapping lead and rapper, melodic guest rap`.
@@ -86,9 +88,11 @@ Pick the song whose meaning changes most in the new arrangement — e.g. a defia
 E.g. it starts like a sugary teen-pop song and then a heavy metal riff takes over.
 
 ```
-[False Start — Instrumental] [[156 BPM. Four bars of bright bubblegum synth-pop in A major: glossy plucked SYNTH, playful ascending melody, programmed handclaps, light electronic kick. Cheerful, almost sugary. No vocals, no guitar.]]
+[False Start — Instrumental]
+[[156 BPM. Four bars of bright bubblegum synth-pop in A major: glossy plucked SYNTH, playful ascending melody, programmed handclaps, light electronic kick. Cheerful, almost sugary. No vocals, no guitar.]]
 
-[Violent Switch] [[Cut the pop arrangement dead. Immediately transform its melody into an A-minor drop-A guitar riff, full-band stop, hard snare, driving double kick. Eight instrumental bars.]]
+[Violent Switch]
+[[Cut the pop arrangement dead. Immediately transform its melody into an A-minor drop-A guitar riff, full-band stop, hard snare, driving double kick. Eight instrumental bars.]]
 ```
 
 STYLE: say both halves and that the **same motif** is transformed. EXCLUDE what would soften the switch (`acoustic guitar, fingerpicking, strummed intro`). Bring the fake-out back at the end for an ironic close (`Two bars of the sugary intro synth alone. Abruptly interrupt it with one full-band guitar attack.`).

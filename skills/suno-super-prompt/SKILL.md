@@ -15,7 +15,7 @@ Reply in the user's language. The lyric language is decided in the intake (defau
 2. **Concept before prompts.** Propose the concept and wait for approval, unless the user explicitly asks for the prompt in the same message; then give both. See `references/album-workflow.md`.
    - **Single:** title · theme (one line) · story (2–3 sentences) · sonic direction (BPM, key, genre blend, opening, signature riff or motif, vocal) · chorus hook line and how the final chorus changes.
    - **EP / album:** title and thesis · narrative arc · how the sound evolves · tracklist with one line per track saying what the track *does* (opener, radio single, ballad, closer, bonus).
-3. **Pitch the next track when asked** ("what's the idea of the next one?"): title, story in 2–3 sentences, chorus hook line, BPM and sonic signature. Don't write the prompt until they say go.
+3. **Pitch the next track when asked** ("what's the idea of the next one?"): title, story in 2–3 sentences, chorus hook line, BPM and sonic signature, and (on an EP or album) how it connects to the previous track. Don't write the prompt until they say go.
 4. **One track per turn.** Write one SUPER PROMPT, then stop. Advance only when the user says "next track".
 5. **Validate before sending.** Enforce the character limits below and run the checklist (with `scripts/check_prompt.py` whenever you can execute code).
 6. **Iterate on feedback** using `references/troubleshooting.md`: every complaint maps to a STYLE change *and* an EXCLUDE change *and* a [[direction]] change.
@@ -49,7 +49,7 @@ LYRICS:
 [[Production direction: what plays, how the voice behaves, what must NOT happen. 1–3 short sentences.]]
 Lyric line, one sung phrase.
 Lyric line, one sung phrase.
-(Backing vocal echo.)
+(Backing-vocal reply.)
 
 [Next Section]
 [[...]]
@@ -76,7 +76,7 @@ Full syntax, section naming and examples: `references/super-prompt-format.md`. `
 
 Counts include spaces and line breaks, exactly as pasted into Suno; the label (`STYLE:`) is not counted.
 
-> **The binding constraint is STYLE + EXCLUDE ≤ 1,000 combined.** Budget **STYLE ≈ 500–750 + EXCLUDE ≈ 200–250** from the first draft. A lean STYLE gets followed; a crowded one gets averaged into something generic.
+> **The binding constraint is STYLE + EXCLUDE ≤ 1,000 combined.** Budget **STYLE ≈ 500–750 + EXCLUDE ≈ 200–250** from the first draft, keeping the sum **≤ 970**: a STYLE near 750 leaves EXCLUDE about 220. A lean STYLE gets followed; a crowded one gets averaged into something generic.
 
 | Field | Hard limit | Target when writing |
 |---|---|---|
