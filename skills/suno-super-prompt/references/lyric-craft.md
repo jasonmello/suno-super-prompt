@@ -6,7 +6,7 @@ These rules apply to the **sung text** (lyrics and title). `[[directions]]` are 
 
 ### Banned — never use, unless the user explicitly asks
 
-neon, static, velvet, echo, echoes, shadow, shadows, ember, embers, ashes, spark, sparks, ignite, inferno, shattered, fractured, tapestry, symphony, canvas, mosaic, labyrinth, abyss, void, cosmos, celestial, ethereal, eternal, infinite, horizon, twilight, moonlight, starlight, stardust, whisper, whispers, whispered, haunting, phantom, halo, throne, kingdom, fairytale, fate, destiny, wildfire, beneath, amidst, embrace, linger, lingering, unspoken, unbroken, undone, unravel, intertwined, resonate, cascade, kaleidoscope.
+neon, static, velvet, echo, echoes, shadow, shadows, ember, embers, ashes, spark, sparks, ignite, ignites, inferno, shattered, fractured, tapestry, symphony, canvas, mosaic, labyrinth, abyss, void, cosmos, celestial, ethereal, eternal, infinite, horizon, twilight, moonlight, starlight, stardust, whisper, whispers, whispered, haunting, phantom, halo, throne, kingdom, fairytale, fate, destiny, wildfire, beneath, amidst, embrace, linger, lingering, unspoken, unbroken, undone, unravel, intertwined, resonate, cascade, kaleidoscope.
 
 Phrases: "soul on fire", "storm inside", "rise from the ashes", "in the dark", "through the night", "fading light", "city lights", "burning bright".
 
@@ -56,7 +56,7 @@ Techniques:
 
 ## Choruses
 
-- Natural phrase length — not telegram-short, not run-on. The sweet spot: 5–9 syllables per line, 4–8 lines.
+- Natural phrase length — not telegram-short, not run-on. The sweet spot: 5–9 syllables per line, 4–8 lines (split into stanzas of 2–4 lines, as in the layout rules).
 - One **title line** repeated at least twice, ideally opening and closing the chorus.
 - **Repeated melodic anchors**: same rhythm for parallel lines (`I used to leave early. Now I leave late.`).
 - **Open vowels** on held words (late, away, home, me, go).

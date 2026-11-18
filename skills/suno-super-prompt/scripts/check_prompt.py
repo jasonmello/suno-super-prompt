@@ -27,7 +27,7 @@ LYRICS_LIMIT = 5000
 STYLE_LIMIT = 1000
 EXCLUDE_LIMIT = 1000
 STYLE_EXCLUDE_LIMIT = 1000
-NEAR_LIMIT = 0.95
+NEAR_LIMIT = 0.97  # warn above 970/1,000: the writing target for STYLE+EXCLUDE
 
 CROWD_BLOCK = ["crowd noise", "audience", "applause", "crowd chants", "no crowd"]
 
@@ -149,7 +149,7 @@ def main():
         if size > limit:
             errors.append(f"{name} is {size} chars, {size - limit} over the {limit} limit")
         elif size > limit * NEAR_LIMIT:
-            warnings.append(f"{name} is {size}/{limit} chars, within 5% of the limit")
+            warnings.append(f"{name} is {size}/{limit} chars, within 3% of the limit")
 
     excl_lower = exclude.lower()
     excl_items = [i.strip(" .") for i in excl_lower.split(",")]
