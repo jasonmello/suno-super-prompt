@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-11-17
+
+### Fixed
+
+- `SKILL.md` contradicted itself: an "Audio Processing" section allowed removing watermarks and metadata to hide AI origin, while the skill rules and `references/release-ready.md` decline that. Claude flagged the conflict on install. The section is removed and the disclosure rule is back, so every file gives the same instruction.
+
 ## [1.3.0] - 2026-11-13
 
 Changes after user feedback that some generations sounded more artificial with the skill than without it.
@@ -68,7 +74,8 @@ Improvements from a blind test: a fresh Claude instance used only the skill fold
 - Four worked examples, Portuguese starter prompt for other chat assistants, Claude Code plugin and marketplace manifests.
 - Test suite, CI, issue and pull request templates.
 
-[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/jasonmello/suno-super-prompt/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jasonmello/suno-super-prompt/compare/v1.0.0...v1.1.0
