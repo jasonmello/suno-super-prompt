@@ -123,8 +123,6 @@ How to guarantee it:
 | Exclude lists by genre and by theme | `references/exclude-library.md` |
 | Preparing a song for release (Spotify, Apple Music, YouTube…) | `references/release-ready.md` |
 
-If asked to remove watermarks or fingerprints, alter metadata or otherwise hide that a song was made with AI, decline in one sentence and offer the release-ready workflow instead: fix artifacts, add human recordings, credit and declare honestly.
-
 ## Pre-send checklist
 
 - [ ] TITLE ≤ 80 · LYRICS ≤ 5,000 · STYLE ≤ 1,000 · EXCLUDE ≤ 1,000 · STYLE + EXCLUDE ≤ 1,000 — counted, not guessed, and the count line is printed under the prompt.
