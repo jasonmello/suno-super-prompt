@@ -4,8 +4,8 @@ Each fix touches three places: STYLE, the section [[directions]], and EXCLUDE.
 
 | Symptom / user feedback | STYLE | [[directions]] | EXCLUDE |
 |---|---|---|---|
-| Electric guitar / drums / bass appear in the acoustic version | Rewrite with the acoustic lock (`EXACTLY TWO SOURCES…`); remove *build, lift, band, live, solo*; remove band references | Lock sentence in every section; replace solo with `[Acoustic Turnaround]` | Full acoustic EXCLUDE template (`special-versions.md`) |
-| Starts slow / soft / with ambience | `Hook and heavy guitars on beat one; no intro.` | First section is `[Opening Hook]` or `[Opening Riff] [[Immediate full-band impact… No intro or fade-in.]]` | `slow intro, soft intro, ambient opening, fade-in, clean intro, synth intro, bass-only intro` |
+| Electric guitar / drums / bass appear in the acoustic version | Rewrite with the acoustic lock (`EXACTLY TWO SOURCES…`); remove *build, lift, band, live*; any solo is an `acoustic guitar solo`; remove band references | Lock sentence in every section; solo as `[Acoustic Guitar Solo]` on the same guitar, or `[Acoustic Turnaround]` | Full acoustic EXCLUDE template (`special-versions.md`) |
+| Starts slow / soft / with ambience | `Hook and heavy guitars on beat one; no intro.` | First section is `[Opening Hook]` or `[Opening Riff]` + `[[Immediate full-band impact… No intro or fade-in.]]` | `slow intro, soft intro, ambient opening, fade-in, clean intro, synth intro, bass-only intro` |
 | User doesn't want a cold open | `Four-bar instrumental intro: <motif>.` | `[Instrumental Intro] [[Four bars… No vocals.]]` | `cold open` |
 | Sounds grunge / retro / garage when it should be modern | `Modern arena-ready alternative metal…, polished low end` | `tight`, `precise stops` | `grunge, loose garage drums, retro production, shoegaze` |
 | Too grungy *and* too slow → wants Bring Me The Horizon / Bad Omens / Falling In Reverse energy | Raise to ~140–156 BPM, drop tuning, electronic accents, beat-one vocal | Beat-one hook, synth accents, eight-bar solo | as above + `whispered opening` |
