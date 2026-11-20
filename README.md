@@ -11,7 +11,7 @@
 **[Website](https://jasonmello.github.io/suno-super-prompt/)** · **[Quick start](#works-with-any-ai)** · **[Examples](skills/suno-super-prompt/examples)**
 
 [![CI](https://github.com/jasonmello/suno-super-prompt/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonmello/suno-super-prompt/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-SKILL.md-8A2BE2)](skills/suno-super-prompt/SKILL.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Works with any AI](https://img.shields.io/badge/works%20with-ChatGPT%20%7C%20Claude%20%7C%20Gemini%20%7C%20any%20AI-orange)](#works-with-any-ai)
@@ -268,4 +268,4 @@ Found a STYLE phrase or EXCLUDE trick that Suno respects? See [CONTRIBUTING.md](
 
 ## License
 
-[MIT](LICENSE) © Jason Mello. This is an independent community project, not affiliated with or endorsed by Suno, Inc. Example lyrics are original works from the author's projects.
+[Apache 2.0](LICENSE) © Jason Mello. See [NOTICE](NOTICE). This is an independent community project, not affiliated with or endorsed by Suno, Inc. Example lyrics are original works from the author's projects.

@@ -48,4 +48,4 @@ No dependencies beyond the Python 3.10+ standard library.
 3. Add a line under **Unreleased** in `CHANGELOG.md`.
 4. Open the PR and fill in the template.
 
-By contributing you agree that your contribution is licensed under the MIT License and that you follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+By contributing you agree that your contribution is licensed under the Apache License 2.0 and that you follow the [Code of Conduct](CODE_OF_CONDUCT.md).
