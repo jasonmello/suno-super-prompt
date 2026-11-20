@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- License changed from MIT to Apache 2.0, with a NOTICE file that redistributions must keep. Versions released before this change stay available under MIT.
+
 ## [1.3.1] - 2026-11-17
 
 ### Fixed

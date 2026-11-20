@@ -5,6 +5,6 @@
   "author": { "name": "Jason Mello", "url": "https://github.com/jasonmello" },
   "homepage": "https://github.com/jasonmello/suno-super-prompt",
   "repository": "https://github.com/jasonmello/suno-super-prompt",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": ["suno", "music", "songwriting", "prompt", "lyrics", "ai-music"]
 }
